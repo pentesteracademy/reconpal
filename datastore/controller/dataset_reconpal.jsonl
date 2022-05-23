@@ -1,0 +1,1486 @@
+{"prompt": "scan 10.10.10.5\n", "completion": "scanner~nmap 10.10.10.5"}
+{"prompt": "scan all ports of 10.10.10.5\n", "completion": "scanner~nmap -p- 10.10.10.5"}
+{"prompt": "full scan 123.23.42.5\n", "completion": "scanner~nmap -sS -Pn -p- 123.23.42.5"}
+{"prompt": "full scan with version detection for 134.54.23.7\n", "completion": "scanner~nmap -sV -Pn -p- 134.54.23.7"}
+{"prompt": "perform a stealth scan on 100.100.100.20\n", "completion": "scanner~nmap -sS -Pn 100.100.100.20"}
+{"prompt": "scan 4.6.5.8 for ssh, ftp and rdp\n", "completion": "scanner~nmap -p 22,21,3389 4.6.5.8"}
+{"prompt": "scan for rdp and ftp on 54.23.54.7\n", "completion": "scanner~nmap -p 3389, 21 54.23.54.7"}
+{"prompt": "nikto scan 43.54.65.76\n", "completion": "scanner~nikto -h 43.54.65.76"}
+{"prompt": "run nikto on http://example.com\n", "completion": "scanner~nikto -h http://example.com"}
+{"prompt": "scan the ip 192.168.111.110\n", "completion": "scanner~nmap 192.168.111.11"}
+{"prompt": "scan 10.131.32.2 for ssh\n", "completion": "scanner~nmap -p 22 10.131.32.2"}
+{"prompt": "scan 32.45.24.1 for ssh, ftp and rdp ports\n", "completion": "scanner~nmap -p 22,21,3389 32.45.24.1"}
+{"prompt": "scan rdp and ssh on 76.45.23.5\n", "completion": "scanner~nmap -p 3389, 22 76.45.23.5"}
+{"prompt": "search 34.23.54.5 for web vulnerabilities\n", "completion": "scanner~nikto -h 34.23.54.5"}
+{"prompt": "run web app scan on 34.65.75.23\n", "completion": "scanner~nmap -p 80,443,8080 34.65.75.23"}
+{"prompt": "run vulnerability scan on 65.76.34.6\n", "completion": "scanner~nmap -sV 65.76.34.6"}
+{"prompt": "run nmap vsftpd backdoor script 192.58.34.6 with command id\n", "completion": "attacker~nmap --script=ftp-vsftpd-backdoor --script-args ftp-vsftpd-backdoor.cmd=id 192.58.34.6"}
+{"prompt": "exploit vsftpd backdoor on 10.25.14.6 with command pwd\n", "completion": "attacker~nmap --script=ftp-vsftpd-backdoor --script-args ftp-vsftpd-backdoor.cmd=pwd 10.25.14.6"}
+{"prompt": "use dirb on 10.10.10.5\n", "completion": "attacker~dirb 10.10.10.5"}
+{"prompt": "directory bust 78.98.41.65\n", "completion": "attacker~dirb 78.98.41.65"}
+{"prompt": "perform directory busting on 91.52.68.142\n", "completion": "attacker~dirb 91.52.68.142"}
+{"prompt": "use dirb on http://example.com\n", "completion": "attacker~dirb http://example.com"}
+{"prompt": "directory bust http://example2.com\n", "completion": "attacker~dirb http://example2.com"}
+{"prompt": "perform directory busting on http://example3.com\n", "completion": "attacker~dirb http://example3.com"}
+{"prompt": "use sqlmap on 10.10.10.5\n", "completion": "attacker~sqlmap -u 10.10.10.5 --dbs"}
+{"prompt": "list sql databases for 78.98.41.65\n", "completion": "attacker~sqlmap -u 78.98.41.65 --dbs"}
+{"prompt": "run sqlmap on 91.52.68.142\n", "completion": "attacker~sqlmap -u 91.52.68.142 --dbs"}
+{"prompt": "use sqlmap on http://example.com\n", "completion": "attacker~sqlmap -u http://example.com --dbs"}
+{"prompt": "list sql databases for http://example2.com\n", "completion": "attacker~sqlmap -u http://example2.com --dbs"}
+{"prompt": "run sqlmap on  http://example3.com\n", "completion": "attacker~sqlmap -u http://example3.com --dbs"}
+{"prompt": "run hydra for ssh root user on 10.25.36.4\n", "completion": "attacker~hydra -l root -P /usr/share/wordlists/hydra/top-1000.txt 192.46.212.233 ssh"}
+{"prompt": "shodan host 10.10.10.15\n", "completion": "finder~shodan host 10.10.10.15"}
+{"prompt": "find host info for 10.10.10.15\n", "completion": "finder~shodan host 10.10.10.15"}
+{"prompt": "use shodan to scan host 10.10.10.15\n", "completion": "finder~shodan host 10.10.10.15"}
+{"prompt": "find apache servers in Andorra\n", "completion": "finder~shodan search apache country:'AD'"}
+{"prompt": "find memcached servers in Andorra\n", "completion": "finder~shodan search memcached country:'AD'"}
+{"prompt": "find portainer instances in Andorra\n", "completion": "finder~shodan search portainer country:'AD'"}
+{"prompt": "find docker hosts in Andorra\n", "completion": "finder~shodan search docker country:'AD'"}
+{"prompt": "find cameras in Andorra\n", "completion": "finder~shodan search cameras country:'AD'"}
+{"prompt": "find routers in Andorra\n", "completion": "finder~shodan search routers country:'AD'"}
+{"prompt": "find apache servers in Afghanistan\n", "completion": "finder~shodan search apache country:'AF'"}
+{"prompt": "find memcached servers in Afghanistan\n", "completion": "finder~shodan search memcached country:'AF'"}
+{"prompt": "find portainer instances in Afghanistan\n", "completion": "finder~shodan search portainer country:'AF'"}
+{"prompt": "find docker hosts in Afghanistan\n", "completion": "finder~shodan search docker country:'AF'"}
+{"prompt": "find cameras in Afghanistan\n", "completion": "finder~shodan search cameras country:'AF'"}
+{"prompt": "find routers in Afghanistan\n", "completion": "finder~shodan search routers country:'AF'"}
+{"prompt": "find apache servers in Anguilla\n", "completion": "finder~shodan search apache country:'AI'"}
+{"prompt": "find memcached servers in Anguilla\n", "completion": "finder~shodan search memcached country:'AI'"}
+{"prompt": "find portainer instances in Anguilla\n", "completion": "finder~shodan search portainer country:'AI'"}
+{"prompt": "find docker hosts in Anguilla\n", "completion": "finder~shodan search docker country:'AI'"}
+{"prompt": "find cameras in Anguilla\n", "completion": "finder~shodan search cameras country:'AI'"}
+{"prompt": "find routers in Anguilla\n", "completion": "finder~shodan search routers country:'AI'"}
+{"prompt": "find apache servers in Armenia\n", "completion": "finder~shodan search apache country:'AM'"}
+{"prompt": "find memcached servers in Armenia\n", "completion": "finder~shodan search memcached country:'AM'"}
+{"prompt": "find portainer instances in Armenia\n", "completion": "finder~shodan search portainer country:'AM'"}
+{"prompt": "find docker hosts in Armenia\n", "completion": "finder~shodan search docker country:'AM'"}
+{"prompt": "find cameras in Armenia\n", "completion": "finder~shodan search cameras country:'AM'"}
+{"prompt": "find routers in Armenia\n", "completion": "finder~shodan search routers country:'AM'"}
+{"prompt": "find apache servers in Angola\n", "completion": "finder~shodan search apache country:'AO'"}
+{"prompt": "find memcached servers in Angola\n", "completion": "finder~shodan search memcached country:'AO'"}
+{"prompt": "find portainer instances in Angola\n", "completion": "finder~shodan search portainer country:'AO'"}
+{"prompt": "find docker hosts in Angola\n", "completion": "finder~shodan search docker country:'AO'"}
+{"prompt": "find cameras in Angola\n", "completion": "finder~shodan search cameras country:'AO'"}
+{"prompt": "find routers in Angola\n", "completion": "finder~shodan search routers country:'AO'"}
+{"prompt": "find apache servers in Argentina\n", "completion": "finder~shodan search apache country:'AR'"}
+{"prompt": "find memcached servers in Argentina\n", "completion": "finder~shodan search memcached country:'AR'"}
+{"prompt": "find portainer instances in Argentina\n", "completion": "finder~shodan search portainer country:'AR'"}
+{"prompt": "find docker hosts in Argentina\n", "completion": "finder~shodan search docker country:'AR'"}
+{"prompt": "find cameras in Argentina\n", "completion": "finder~shodan search cameras country:'AR'"}
+{"prompt": "find routers in Argentina\n", "completion": "finder~shodan search routers country:'AR'"}
+{"prompt": "find apache servers in Austria\n", "completion": "finder~shodan search apache country:'AT'"}
+{"prompt": "find memcached servers in Austria\n", "completion": "finder~shodan search memcached country:'AT'"}
+{"prompt": "find portainer instances in Austria\n", "completion": "finder~shodan search portainer country:'AT'"}
+{"prompt": "find docker hosts in Austria\n", "completion": "finder~shodan search docker country:'AT'"}
+{"prompt": "find cameras in Austria\n", "completion": "finder~shodan search cameras country:'AT'"}
+{"prompt": "find routers in Austria\n", "completion": "finder~shodan search routers country:'AT'"}
+{"prompt": "find apache servers in Aruba\n", "completion": "finder~shodan search apache country:'AW'"}
+{"prompt": "find memcached servers in Aruba\n", "completion": "finder~shodan search memcached country:'AW'"}
+{"prompt": "find portainer instances in Aruba\n", "completion": "finder~shodan search portainer country:'AW'"}
+{"prompt": "find docker hosts in Aruba\n", "completion": "finder~shodan search docker country:'AW'"}
+{"prompt": "find cameras in Aruba\n", "completion": "finder~shodan search cameras country:'AW'"}
+{"prompt": "find routers in Aruba\n", "completion": "finder~shodan search routers country:'AW'"}
+{"prompt": "find apache servers in Bosnia- Herzegovina\n", "completion": "finder~shodan search apache country:'BA'"}
+{"prompt": "find memcached servers in Bosnia- Herzegovina\n", "completion": "finder~shodan search memcached country:'BA'"}
+{"prompt": "find portainer instances in Bosnia- Herzegovina\n", "completion": "finder~shodan search portainer country:'BA'"}
+{"prompt": "find docker hosts in Bosnia- Herzegovina\n", "completion": "finder~shodan search docker country:'BA'"}
+{"prompt": "find cameras in Bosnia- Herzegovina\n", "completion": "finder~shodan search cameras country:'BA'"}
+{"prompt": "find routers in Bosnia- Herzegovina\n", "completion": "finder~shodan search routers country:'BA'"}
+{"prompt": "find apache servers in Bangladesh\n", "completion": "finder~shodan search apache country:'BD'"}
+{"prompt": "find memcached servers in Bangladesh\n", "completion": "finder~shodan search memcached country:'BD'"}
+{"prompt": "find portainer instances in Bangladesh\n", "completion": "finder~shodan search portainer country:'BD'"}
+{"prompt": "find docker hosts in Bangladesh\n", "completion": "finder~shodan search docker country:'BD'"}
+{"prompt": "find cameras in Bangladesh\n", "completion": "finder~shodan search cameras country:'BD'"}
+{"prompt": "find routers in Bangladesh\n", "completion": "finder~shodan search routers country:'BD'"}
+{"prompt": "find apache servers in Burkina Faso\n", "completion": "finder~shodan search apache country:'BF'"}
+{"prompt": "find memcached servers in Burkina Faso\n", "completion": "finder~shodan search memcached country:'BF'"}
+{"prompt": "find portainer instances in Burkina Faso\n", "completion": "finder~shodan search portainer country:'BF'"}
+{"prompt": "find docker hosts in Burkina Faso\n", "completion": "finder~shodan search docker country:'BF'"}
+{"prompt": "find cameras in Burkina Faso\n", "completion": "finder~shodan search cameras country:'BF'"}
+{"prompt": "find routers in Burkina Faso\n", "completion": "finder~shodan search routers country:'BF'"}
+{"prompt": "find apache servers in Bahrain\n", "completion": "finder~shodan search apache country:'BH'"}
+{"prompt": "find memcached servers in Bahrain\n", "completion": "finder~shodan search memcached country:'BH'"}
+{"prompt": "find portainer instances in Bahrain\n", "completion": "finder~shodan search portainer country:'BH'"}
+{"prompt": "find docker hosts in Bahrain\n", "completion": "finder~shodan search docker country:'BH'"}
+{"prompt": "find cameras in Bahrain\n", "completion": "finder~shodan search cameras country:'BH'"}
+{"prompt": "find routers in Bahrain\n", "completion": "finder~shodan search routers country:'BH'"}
+{"prompt": "find apache servers in Benin\n", "completion": "finder~shodan search apache country:'BJ'"}
+{"prompt": "find memcached servers in Benin\n", "completion": "finder~shodan search memcached country:'BJ'"}
+{"prompt": "find portainer instances in Benin\n", "completion": "finder~shodan search portainer country:'BJ'"}
+{"prompt": "find docker hosts in Benin\n", "completion": "finder~shodan search docker country:'BJ'"}
+{"prompt": "find cameras in Benin\n", "completion": "finder~shodan search cameras country:'BJ'"}
+{"prompt": "find routers in Benin\n", "completion": "finder~shodan search routers country:'BJ'"}
+{"prompt": "find apache servers in Brunei Darussalam\n", "completion": "finder~shodan search apache country:'BN'"}
+{"prompt": "find memcached servers in Brunei Darussalam\n", "completion": "finder~shodan search memcached country:'BN'"}
+{"prompt": "find portainer instances in Brunei Darussalam\n", "completion": "finder~shodan search portainer country:'BN'"}
+{"prompt": "find docker hosts in Brunei Darussalam\n", "completion": "finder~shodan search docker country:'BN'"}
+{"prompt": "find cameras in Brunei Darussalam\n", "completion": "finder~shodan search cameras country:'BN'"}
+{"prompt": "find routers in Brunei Darussalam\n", "completion": "finder~shodan search routers country:'BN'"}
+{"prompt": "find apache servers in Brazil\n", "completion": "finder~shodan search apache country:'BR'"}
+{"prompt": "find memcached servers in Brazil\n", "completion": "finder~shodan search memcached country:'BR'"}
+{"prompt": "find portainer instances in Brazil\n", "completion": "finder~shodan search portainer country:'BR'"}
+{"prompt": "find docker hosts in Brazil\n", "completion": "finder~shodan search docker country:'BR'"}
+{"prompt": "find cameras in Brazil\n", "completion": "finder~shodan search cameras country:'BR'"}
+{"prompt": "find routers in Brazil\n", "completion": "finder~shodan search routers country:'BR'"}
+{"prompt": "find apache servers in Bhutan\n", "completion": "finder~shodan search apache country:'BT'"}
+{"prompt": "find memcached servers in Bhutan\n", "completion": "finder~shodan search memcached country:'BT'"}
+{"prompt": "find portainer instances in Bhutan\n", "completion": "finder~shodan search portainer country:'BT'"}
+{"prompt": "find docker hosts in Bhutan\n", "completion": "finder~shodan search docker country:'BT'"}
+{"prompt": "find cameras in Bhutan\n", "completion": "finder~shodan search cameras country:'BT'"}
+{"prompt": "find routers in Bhutan\n", "completion": "finder~shodan search routers country:'BT'"}
+{"prompt": "find apache servers in Botswana\n", "completion": "finder~shodan search apache country:'BW'"}
+{"prompt": "find memcached servers in Botswana\n", "completion": "finder~shodan search memcached country:'BW'"}
+{"prompt": "find portainer instances in Botswana\n", "completion": "finder~shodan search portainer country:'BW'"}
+{"prompt": "find docker hosts in Botswana\n", "completion": "finder~shodan search docker country:'BW'"}
+{"prompt": "find cameras in Botswana\n", "completion": "finder~shodan search cameras country:'BW'"}
+{"prompt": "find routers in Botswana\n", "completion": "finder~shodan search routers country:'BW'"}
+{"prompt": "find apache servers in Belize\n", "completion": "finder~shodan search apache country:'BZ'"}
+{"prompt": "find memcached servers in Belize\n", "completion": "finder~shodan search memcached country:'BZ'"}
+{"prompt": "find portainer instances in Belize\n", "completion": "finder~shodan search portainer country:'BZ'"}
+{"prompt": "find docker hosts in Belize\n", "completion": "finder~shodan search docker country:'BZ'"}
+{"prompt": "find cameras in Belize\n", "completion": "finder~shodan search cameras country:'BZ'"}
+{"prompt": "find routers in Belize\n", "completion": "finder~shodan search routers country:'BZ'"}
+{"prompt": "find apache servers in Cocos (Keeling) Islands\n", "completion": "finder~shodan search apache country:'CC'"}
+{"prompt": "find memcached servers in Cocos (Keeling) Islands\n", "completion": "finder~shodan search memcached country:'CC'"}
+{"prompt": "find portainer instances in Cocos (Keeling) Islands\n", "completion": "finder~shodan search portainer country:'CC'"}
+{"prompt": "find docker hosts in Cocos (Keeling) Islands\n", "completion": "finder~shodan search docker country:'CC'"}
+{"prompt": "find cameras in Cocos (Keeling) Islands\n", "completion": "finder~shodan search cameras country:'CC'"}
+{"prompt": "find routers in Cocos (Keeling) Islands\n", "completion": "finder~shodan search routers country:'CC'"}
+{"prompt": "find apache servers in Congo\n", "completion": "finder~shodan search apache country:'CG'"}
+{"prompt": "find memcached servers in Congo\n", "completion": "finder~shodan search memcached country:'CG'"}
+{"prompt": "find portainer instances in Congo\n", "completion": "finder~shodan search portainer country:'CG'"}
+{"prompt": "find docker hosts in Congo\n", "completion": "finder~shodan search docker country:'CG'"}
+{"prompt": "find cameras in Congo\n", "completion": "finder~shodan search cameras country:'CG'"}
+{"prompt": "find routers in Congo\n", "completion": "finder~shodan search routers country:'CG'"}
+{"prompt": "find apache servers in Ivory Coast\n", "completion": "finder~shodan search apache country:'CI'"}
+{"prompt": "find memcached servers in Ivory Coast\n", "completion": "finder~shodan search memcached country:'CI'"}
+{"prompt": "find portainer instances in Ivory Coast\n", "completion": "finder~shodan search portainer country:'CI'"}
+{"prompt": "find docker hosts in Ivory Coast\n", "completion": "finder~shodan search docker country:'CI'"}
+{"prompt": "find cameras in Ivory Coast\n", "completion": "finder~shodan search cameras country:'CI'"}
+{"prompt": "find routers in Ivory Coast\n", "completion": "finder~shodan search routers country:'CI'"}
+{"prompt": "find apache servers in Chile\n", "completion": "finder~shodan search apache country:'CL'"}
+{"prompt": "find memcached servers in Chile\n", "completion": "finder~shodan search memcached country:'CL'"}
+{"prompt": "find portainer instances in Chile\n", "completion": "finder~shodan search portainer country:'CL'"}
+{"prompt": "find docker hosts in Chile\n", "completion": "finder~shodan search docker country:'CL'"}
+{"prompt": "find cameras in Chile\n", "completion": "finder~shodan search cameras country:'CL'"}
+{"prompt": "find routers in Chile\n", "completion": "finder~shodan search routers country:'CL'"}
+{"prompt": "find apache servers in China\n", "completion": "finder~shodan search apache country:'CN'"}
+{"prompt": "find memcached servers in China\n", "completion": "finder~shodan search memcached country:'CN'"}
+{"prompt": "find portainer instances in China\n", "completion": "finder~shodan search portainer country:'CN'"}
+{"prompt": "find docker hosts in China\n", "completion": "finder~shodan search docker country:'CN'"}
+{"prompt": "find cameras in China\n", "completion": "finder~shodan search cameras country:'CN'"}
+{"prompt": "find routers in China\n", "completion": "finder~shodan search routers country:'CN'"}
+{"prompt": "find apache servers in Costa Rica\n", "completion": "finder~shodan search apache country:'CR'"}
+{"prompt": "find memcached servers in Costa Rica\n", "completion": "finder~shodan search memcached country:'CR'"}
+{"prompt": "find portainer instances in Costa Rica\n", "completion": "finder~shodan search portainer country:'CR'"}
+{"prompt": "find docker hosts in Costa Rica\n", "completion": "finder~shodan search docker country:'CR'"}
+{"prompt": "find cameras in Costa Rica\n", "completion": "finder~shodan search cameras country:'CR'"}
+{"prompt": "find routers in Costa Rica\n", "completion": "finder~shodan search routers country:'CR'"}
+{"prompt": "find apache servers in Cuba\n", "completion": "finder~shodan search apache country:'CU'"}
+{"prompt": "find memcached servers in Cuba\n", "completion": "finder~shodan search memcached country:'CU'"}
+{"prompt": "find portainer instances in Cuba\n", "completion": "finder~shodan search portainer country:'CU'"}
+{"prompt": "find docker hosts in Cuba\n", "completion": "finder~shodan search docker country:'CU'"}
+{"prompt": "find cameras in Cuba\n", "completion": "finder~shodan search cameras country:'CU'"}
+{"prompt": "find routers in Cuba\n", "completion": "finder~shodan search routers country:'CU'"}
+{"prompt": "find apache servers in Christmas Island\n", "completion": "finder~shodan search apache country:'CX'"}
+{"prompt": "find memcached servers in Christmas Island\n", "completion": "finder~shodan search memcached country:'CX'"}
+{"prompt": "find portainer instances in Christmas Island\n", "completion": "finder~shodan search portainer country:'CX'"}
+{"prompt": "find docker hosts in Christmas Island\n", "completion": "finder~shodan search docker country:'CX'"}
+{"prompt": "find cameras in Christmas Island\n", "completion": "finder~shodan search cameras country:'CX'"}
+{"prompt": "find routers in Christmas Island\n", "completion": "finder~shodan search routers country:'CX'"}
+{"prompt": "find apache servers in Czech Republic\n", "completion": "finder~shodan search apache country:'CZ'"}
+{"prompt": "find memcached servers in Czech Republic\n", "completion": "finder~shodan search memcached country:'CZ'"}
+{"prompt": "find portainer instances in Czech Republic\n", "completion": "finder~shodan search portainer country:'CZ'"}
+{"prompt": "find docker hosts in Czech Republic\n", "completion": "finder~shodan search docker country:'CZ'"}
+{"prompt": "find cameras in Czech Republic\n", "completion": "finder~shodan search cameras country:'CZ'"}
+{"prompt": "find routers in Czech Republic\n", "completion": "finder~shodan search routers country:'CZ'"}
+{"prompt": "find apache servers in Djibouti\n", "completion": "finder~shodan search apache country:'DJ'"}
+{"prompt": "find memcached servers in Djibouti\n", "completion": "finder~shodan search memcached country:'DJ'"}
+{"prompt": "find portainer instances in Djibouti\n", "completion": "finder~shodan search portainer country:'DJ'"}
+{"prompt": "find docker hosts in Djibouti\n", "completion": "finder~shodan search docker country:'DJ'"}
+{"prompt": "find cameras in Djibouti\n", "completion": "finder~shodan search cameras country:'DJ'"}
+{"prompt": "find routers in Djibouti\n", "completion": "finder~shodan search routers country:'DJ'"}
+{"prompt": "find apache servers in Dominica\n", "completion": "finder~shodan search apache country:'DM'"}
+{"prompt": "find memcached servers in Dominica\n", "completion": "finder~shodan search memcached country:'DM'"}
+{"prompt": "find portainer instances in Dominica\n", "completion": "finder~shodan search portainer country:'DM'"}
+{"prompt": "find docker hosts in Dominica\n", "completion": "finder~shodan search docker country:'DM'"}
+{"prompt": "find cameras in Dominica\n", "completion": "finder~shodan search cameras country:'DM'"}
+{"prompt": "find routers in Dominica\n", "completion": "finder~shodan search routers country:'DM'"}
+{"prompt": "find apache servers in Algeria\n", "completion": "finder~shodan search apache country:'DZ'"}
+{"prompt": "find memcached servers in Algeria\n", "completion": "finder~shodan search memcached country:'DZ'"}
+{"prompt": "find portainer instances in Algeria\n", "completion": "finder~shodan search portainer country:'DZ'"}
+{"prompt": "find docker hosts in Algeria\n", "completion": "finder~shodan search docker country:'DZ'"}
+{"prompt": "find cameras in Algeria\n", "completion": "finder~shodan search cameras country:'DZ'"}
+{"prompt": "find routers in Algeria\n", "completion": "finder~shodan search routers country:'DZ'"}
+{"prompt": "find apache servers in Estonia\n", "completion": "finder~shodan search apache country:'EE'"}
+{"prompt": "find memcached servers in Estonia\n", "completion": "finder~shodan search memcached country:'EE'"}
+{"prompt": "find portainer instances in Estonia\n", "completion": "finder~shodan search portainer country:'EE'"}
+{"prompt": "find docker hosts in Estonia\n", "completion": "finder~shodan search docker country:'EE'"}
+{"prompt": "find cameras in Estonia\n", "completion": "finder~shodan search cameras country:'EE'"}
+{"prompt": "find routers in Estonia\n", "completion": "finder~shodan search routers country:'EE'"}
+{"prompt": "find apache servers in Western Sahara\n", "completion": "finder~shodan search apache country:'EH'"}
+{"prompt": "find memcached servers in Western Sahara\n", "completion": "finder~shodan search memcached country:'EH'"}
+{"prompt": "find portainer instances in Western Sahara\n", "completion": "finder~shodan search portainer country:'EH'"}
+{"prompt": "find docker hosts in Western Sahara\n", "completion": "finder~shodan search docker country:'EH'"}
+{"prompt": "find cameras in Western Sahara\n", "completion": "finder~shodan search cameras country:'EH'"}
+{"prompt": "find routers in Western Sahara\n", "completion": "finder~shodan search routers country:'EH'"}
+{"prompt": "find apache servers in Spain\n", "completion": "finder~shodan search apache country:'ES'"}
+{"prompt": "find memcached servers in Spain\n", "completion": "finder~shodan search memcached country:'ES'"}
+{"prompt": "find portainer instances in Spain\n", "completion": "finder~shodan search portainer country:'ES'"}
+{"prompt": "find docker hosts in Spain\n", "completion": "finder~shodan search docker country:'ES'"}
+{"prompt": "find cameras in Spain\n", "completion": "finder~shodan search cameras country:'ES'"}
+{"prompt": "find routers in Spain\n", "completion": "finder~shodan search routers country:'ES'"}
+{"prompt": "find apache servers in Finland\n", "completion": "finder~shodan search apache country:'FI'"}
+{"prompt": "find memcached servers in Finland\n", "completion": "finder~shodan search memcached country:'FI'"}
+{"prompt": "find portainer instances in Finland\n", "completion": "finder~shodan search portainer country:'FI'"}
+{"prompt": "find docker hosts in Finland\n", "completion": "finder~shodan search docker country:'FI'"}
+{"prompt": "find cameras in Finland\n", "completion": "finder~shodan search cameras country:'FI'"}
+{"prompt": "find routers in Finland\n", "completion": "finder~shodan search routers country:'FI'"}
+{"prompt": "find apache servers in Falkland Isl.( Malvinas)\n", "completion": "finder~shodan search apache country:'FK'"}
+{"prompt": "find memcached servers in Falkland Isl.( Malvinas)\n", "completion": "finder~shodan search memcached country:'FK'"}
+{"prompt": "find portainer instances in Falkland Isl.( Malvinas)\n", "completion": "finder~shodan search portainer country:'FK'"}
+{"prompt": "find docker hosts in Falkland Isl.( Malvinas)\n", "completion": "finder~shodan search docker country:'FK'"}
+{"prompt": "find cameras in Falkland Isl.( Malvinas)\n", "completion": "finder~shodan search cameras country:'FK'"}
+{"prompt": "find routers in Falkland Isl.( Malvinas)\n", "completion": "finder~shodan search routers country:'FK'"}
+{"prompt": "find apache servers in Faroe Islands\n", "completion": "finder~shodan search apache country:'FO'"}
+{"prompt": "find memcached servers in Faroe Islands\n", "completion": "finder~shodan search memcached country:'FO'"}
+{"prompt": "find portainer instances in Faroe Islands\n", "completion": "finder~shodan search portainer country:'FO'"}
+{"prompt": "find docker hosts in Faroe Islands\n", "completion": "finder~shodan search docker country:'FO'"}
+{"prompt": "find cameras in Faroe Islands\n", "completion": "finder~shodan search cameras country:'FO'"}
+{"prompt": "find routers in Faroe Islands\n", "completion": "finder~shodan search routers country:'FO'"}
+{"prompt": "find apache servers in France (Europe only)\n", "completion": "finder~shodan search apache country:'FX'"}
+{"prompt": "find memcached servers in France (Europe only)\n", "completion": "finder~shodan search memcached country:'FX'"}
+{"prompt": "find portainer instances in France (Europe only)\n", "completion": "finder~shodan search portainer country:'FX'"}
+{"prompt": "find docker hosts in France (Europe only)\n", "completion": "finder~shodan search docker country:'FX'"}
+{"prompt": "find cameras in France (Europe only)\n", "completion": "finder~shodan search cameras country:'FX'"}
+{"prompt": "find routers in France (Europe only)\n", "completion": "finder~shodan search routers country:'FX'"}
+{"prompt": "find apache servers in Great Britain (UK)\n", "completion": "finder~shodan search apache country:'GB'"}
+{"prompt": "find memcached servers in Great Britain (UK)\n", "completion": "finder~shodan search memcached country:'GB'"}
+{"prompt": "find portainer instances in Great Britain (UK)\n", "completion": "finder~shodan search portainer country:'GB'"}
+{"prompt": "find docker hosts in Great Britain (UK)\n", "completion": "finder~shodan search docker country:'GB'"}
+{"prompt": "find cameras in Great Britain (UK)\n", "completion": "finder~shodan search cameras country:'GB'"}
+{"prompt": "find routers in Great Britain (UK)\n", "completion": "finder~shodan search routers country:'GB'"}
+{"prompt": "find apache servers in Georgia\n", "completion": "finder~shodan search apache country:'GE'"}
+{"prompt": "find memcached servers in Georgia\n", "completion": "finder~shodan search memcached country:'GE'"}
+{"prompt": "find portainer instances in Georgia\n", "completion": "finder~shodan search portainer country:'GE'"}
+{"prompt": "find docker hosts in Georgia\n", "completion": "finder~shodan search docker country:'GE'"}
+{"prompt": "find cameras in Georgia\n", "completion": "finder~shodan search cameras country:'GE'"}
+{"prompt": "find routers in Georgia\n", "completion": "finder~shodan search routers country:'GE'"}
+{"prompt": "find apache servers in Ghana\n", "completion": "finder~shodan search apache country:'GH'"}
+{"prompt": "find memcached servers in Ghana\n", "completion": "finder~shodan search memcached country:'GH'"}
+{"prompt": "find portainer instances in Ghana\n", "completion": "finder~shodan search portainer country:'GH'"}
+{"prompt": "find docker hosts in Ghana\n", "completion": "finder~shodan search docker country:'GH'"}
+{"prompt": "find cameras in Ghana\n", "completion": "finder~shodan search cameras country:'GH'"}
+{"prompt": "find routers in Ghana\n", "completion": "finder~shodan search routers country:'GH'"}
+{"prompt": "find apache servers in Greenland\n", "completion": "finder~shodan search apache country:'GL'"}
+{"prompt": "find memcached servers in Greenland\n", "completion": "finder~shodan search memcached country:'GL'"}
+{"prompt": "find portainer instances in Greenland\n", "completion": "finder~shodan search portainer country:'GL'"}
+{"prompt": "find docker hosts in Greenland\n", "completion": "finder~shodan search docker country:'GL'"}
+{"prompt": "find cameras in Greenland\n", "completion": "finder~shodan search cameras country:'GL'"}
+{"prompt": "find routers in Greenland\n", "completion": "finder~shodan search routers country:'GL'"}
+{"prompt": "find apache servers in Guinea\n", "completion": "finder~shodan search apache country:'GN'"}
+{"prompt": "find memcached servers in Guinea\n", "completion": "finder~shodan search memcached country:'GN'"}
+{"prompt": "find portainer instances in Guinea\n", "completion": "finder~shodan search portainer country:'GN'"}
+{"prompt": "find docker hosts in Guinea\n", "completion": "finder~shodan search docker country:'GN'"}
+{"prompt": "find cameras in Guinea\n", "completion": "finder~shodan search cameras country:'GN'"}
+{"prompt": "find routers in Guinea\n", "completion": "finder~shodan search routers country:'GN'"}
+{"prompt": "find apache servers in Equatorial Guinea\n", "completion": "finder~shodan search apache country:'GQ'"}
+{"prompt": "find memcached servers in Equatorial Guinea\n", "completion": "finder~shodan search memcached country:'GQ'"}
+{"prompt": "find portainer instances in Equatorial Guinea\n", "completion": "finder~shodan search portainer country:'GQ'"}
+{"prompt": "find docker hosts in Equatorial Guinea\n", "completion": "finder~shodan search docker country:'GQ'"}
+{"prompt": "find cameras in Equatorial Guinea\n", "completion": "finder~shodan search cameras country:'GQ'"}
+{"prompt": "find routers in Equatorial Guinea\n", "completion": "finder~shodan search routers country:'GQ'"}
+{"prompt": "find apache servers in South Georgia & South Sandwich Islands\n", "completion": "finder~shodan search apache country:'GS'"}
+{"prompt": "find memcached servers in South Georgia & South Sandwich Islands\n", "completion": "finder~shodan search memcached country:'GS'"}
+{"prompt": "find portainer instances in South Georgia & South Sandwich Islands\n", "completion": "finder~shodan search portainer country:'GS'"}
+{"prompt": "find docker hosts in South Georgia & South Sandwich Islands\n", "completion": "finder~shodan search docker country:'GS'"}
+{"prompt": "find cameras in South Georgia & South Sandwich Islands\n", "completion": "finder~shodan search cameras country:'GS'"}
+{"prompt": "find routers in South Georgia & South Sandwich Islands\n", "completion": "finder~shodan search routers country:'GS'"}
+{"prompt": "find apache servers in Guam (US)\n", "completion": "finder~shodan search apache country:'GU'"}
+{"prompt": "find memcached servers in Guam (US)\n", "completion": "finder~shodan search memcached country:'GU'"}
+{"prompt": "find portainer instances in Guam (US)\n", "completion": "finder~shodan search portainer country:'GU'"}
+{"prompt": "find docker hosts in Guam (US)\n", "completion": "finder~shodan search docker country:'GU'"}
+{"prompt": "find cameras in Guam (US)\n", "completion": "finder~shodan search cameras country:'GU'"}
+{"prompt": "find routers in Guam (US)\n", "completion": "finder~shodan search routers country:'GU'"}
+{"prompt": "find apache servers in Guyana\n", "completion": "finder~shodan search apache country:'GY'"}
+{"prompt": "find memcached servers in Guyana\n", "completion": "finder~shodan search memcached country:'GY'"}
+{"prompt": "find portainer instances in Guyana\n", "completion": "finder~shodan search portainer country:'GY'"}
+{"prompt": "find docker hosts in Guyana\n", "completion": "finder~shodan search docker country:'GY'"}
+{"prompt": "find cameras in Guyana\n", "completion": "finder~shodan search cameras country:'GY'"}
+{"prompt": "find routers in Guyana\n", "completion": "finder~shodan search routers country:'GY'"}
+{"prompt": "find apache servers in Heard & McDonald Islands\n", "completion": "finder~shodan search apache country:'HM'"}
+{"prompt": "find memcached servers in Heard & McDonald Islands\n", "completion": "finder~shodan search memcached country:'HM'"}
+{"prompt": "find portainer instances in Heard & McDonald Islands\n", "completion": "finder~shodan search portainer country:'HM'"}
+{"prompt": "find docker hosts in Heard & McDonald Islands\n", "completion": "finder~shodan search docker country:'HM'"}
+{"prompt": "find cameras in Heard & McDonald Islands\n", "completion": "finder~shodan search cameras country:'HM'"}
+{"prompt": "find routers in Heard & McDonald Islands\n", "completion": "finder~shodan search routers country:'HM'"}
+{"prompt": "find apache servers in Croatia\n", "completion": "finder~shodan search apache country:'HR'"}
+{"prompt": "find memcached servers in Croatia\n", "completion": "finder~shodan search memcached country:'HR'"}
+{"prompt": "find portainer instances in Croatia\n", "completion": "finder~shodan search portainer country:'HR'"}
+{"prompt": "find docker hosts in Croatia\n", "completion": "finder~shodan search docker country:'HR'"}
+{"prompt": "find cameras in Croatia\n", "completion": "finder~shodan search cameras country:'HR'"}
+{"prompt": "find routers in Croatia\n", "completion": "finder~shodan search routers country:'HR'"}
+{"prompt": "find apache servers in Hungary\n", "completion": "finder~shodan search apache country:'HU'"}
+{"prompt": "find memcached servers in Hungary\n", "completion": "finder~shodan search memcached country:'HU'"}
+{"prompt": "find portainer instances in Hungary\n", "completion": "finder~shodan search portainer country:'HU'"}
+{"prompt": "find docker hosts in Hungary\n", "completion": "finder~shodan search docker country:'HU'"}
+{"prompt": "find cameras in Hungary\n", "completion": "finder~shodan search cameras country:'HU'"}
+{"prompt": "find routers in Hungary\n", "completion": "finder~shodan search routers country:'HU'"}
+{"prompt": "find apache servers in Ireland\n", "completion": "finder~shodan search apache country:'IE'"}
+{"prompt": "find memcached servers in Ireland\n", "completion": "finder~shodan search memcached country:'IE'"}
+{"prompt": "find portainer instances in Ireland\n", "completion": "finder~shodan search portainer country:'IE'"}
+{"prompt": "find docker hosts in Ireland\n", "completion": "finder~shodan search docker country:'IE'"}
+{"prompt": "find cameras in Ireland\n", "completion": "finder~shodan search cameras country:'IE'"}
+{"prompt": "find routers in Ireland\n", "completion": "finder~shodan search routers country:'IE'"}
+{"prompt": "find apache servers in India\n", "completion": "finder~shodan search apache country:'IN'"}
+{"prompt": "find memcached servers in India\n", "completion": "finder~shodan search memcached country:'IN'"}
+{"prompt": "find portainer instances in India\n", "completion": "finder~shodan search portainer country:'IN'"}
+{"prompt": "find docker hosts in India\n", "completion": "finder~shodan search docker country:'IN'"}
+{"prompt": "find cameras in India\n", "completion": "finder~shodan search cameras country:'IN'"}
+{"prompt": "find routers in India\n", "completion": "finder~shodan search routers country:'IN'"}
+{"prompt": "find apache servers in Iraq\n", "completion": "finder~shodan search apache country:'IQ'"}
+{"prompt": "find memcached servers in Iraq\n", "completion": "finder~shodan search memcached country:'IQ'"}
+{"prompt": "find portainer instances in Iraq\n", "completion": "finder~shodan search portainer country:'IQ'"}
+{"prompt": "find docker hosts in Iraq\n", "completion": "finder~shodan search docker country:'IQ'"}
+{"prompt": "find cameras in Iraq\n", "completion": "finder~shodan search cameras country:'IQ'"}
+{"prompt": "find routers in Iraq\n", "completion": "finder~shodan search routers country:'IQ'"}
+{"prompt": "find apache servers in Iceland\n", "completion": "finder~shodan search apache country:'IS'"}
+{"prompt": "find memcached servers in Iceland\n", "completion": "finder~shodan search memcached country:'IS'"}
+{"prompt": "find portainer instances in Iceland\n", "completion": "finder~shodan search portainer country:'IS'"}
+{"prompt": "find docker hosts in Iceland\n", "completion": "finder~shodan search docker country:'IS'"}
+{"prompt": "find cameras in Iceland\n", "completion": "finder~shodan search cameras country:'IS'"}
+{"prompt": "find routers in Iceland\n", "completion": "finder~shodan search routers country:'IS'"}
+{"prompt": "find apache servers in Jamaica\n", "completion": "finder~shodan search apache country:'JM'"}
+{"prompt": "find memcached servers in Jamaica\n", "completion": "finder~shodan search memcached country:'JM'"}
+{"prompt": "find portainer instances in Jamaica\n", "completion": "finder~shodan search portainer country:'JM'"}
+{"prompt": "find docker hosts in Jamaica\n", "completion": "finder~shodan search docker country:'JM'"}
+{"prompt": "find cameras in Jamaica\n", "completion": "finder~shodan search cameras country:'JM'"}
+{"prompt": "find routers in Jamaica\n", "completion": "finder~shodan search routers country:'JM'"}
+{"prompt": "find apache servers in Japan\n", "completion": "finder~shodan search apache country:'JP'"}
+{"prompt": "find memcached servers in Japan\n", "completion": "finder~shodan search memcached country:'JP'"}
+{"prompt": "find portainer instances in Japan\n", "completion": "finder~shodan search portainer country:'JP'"}
+{"prompt": "find docker hosts in Japan\n", "completion": "finder~shodan search docker country:'JP'"}
+{"prompt": "find cameras in Japan\n", "completion": "finder~shodan search cameras country:'JP'"}
+{"prompt": "find routers in Japan\n", "completion": "finder~shodan search routers country:'JP'"}
+{"prompt": "find apache servers in Kyrgyz Republic\n", "completion": "finder~shodan search apache country:'KG'"}
+{"prompt": "find memcached servers in Kyrgyz Republic\n", "completion": "finder~shodan search memcached country:'KG'"}
+{"prompt": "find portainer instances in Kyrgyz Republic\n", "completion": "finder~shodan search portainer country:'KG'"}
+{"prompt": "find docker hosts in Kyrgyz Republic\n", "completion": "finder~shodan search docker country:'KG'"}
+{"prompt": "find cameras in Kyrgyz Republic\n", "completion": "finder~shodan search cameras country:'KG'"}
+{"prompt": "find routers in Kyrgyz Republic\n", "completion": "finder~shodan search routers country:'KG'"}
+{"prompt": "find apache servers in Kiribati\n", "completion": "finder~shodan search apache country:'KI'"}
+{"prompt": "find memcached servers in Kiribati\n", "completion": "finder~shodan search memcached country:'KI'"}
+{"prompt": "find portainer instances in Kiribati\n", "completion": "finder~shodan search portainer country:'KI'"}
+{"prompt": "find docker hosts in Kiribati\n", "completion": "finder~shodan search docker country:'KI'"}
+{"prompt": "find cameras in Kiribati\n", "completion": "finder~shodan search cameras country:'KI'"}
+{"prompt": "find routers in Kiribati\n", "completion": "finder~shodan search routers country:'KI'"}
+{"prompt": "find apache servers in St. Kitts Nevis Anguilla\n", "completion": "finder~shodan search apache country:'KN'"}
+{"prompt": "find memcached servers in St. Kitts Nevis Anguilla\n", "completion": "finder~shodan search memcached country:'KN'"}
+{"prompt": "find portainer instances in St. Kitts Nevis Anguilla\n", "completion": "finder~shodan search portainer country:'KN'"}
+{"prompt": "find docker hosts in St. Kitts Nevis Anguilla\n", "completion": "finder~shodan search docker country:'KN'"}
+{"prompt": "find cameras in St. Kitts Nevis Anguilla\n", "completion": "finder~shodan search cameras country:'KN'"}
+{"prompt": "find routers in St. Kitts Nevis Anguilla\n", "completion": "finder~shodan search routers country:'KN'"}
+{"prompt": "find apache servers in Korea (South)\n", "completion": "finder~shodan search apache country:'KR'"}
+{"prompt": "find memcached servers in Korea (South)\n", "completion": "finder~shodan search memcached country:'KR'"}
+{"prompt": "find portainer instances in Korea (South)\n", "completion": "finder~shodan search portainer country:'KR'"}
+{"prompt": "find docker hosts in Korea (South)\n", "completion": "finder~shodan search docker country:'KR'"}
+{"prompt": "find cameras in Korea (South)\n", "completion": "finder~shodan search cameras country:'KR'"}
+{"prompt": "find routers in Korea (South)\n", "completion": "finder~shodan search routers country:'KR'"}
+{"prompt": "find apache servers in Cayman Islands\n", "completion": "finder~shodan search apache country:'KY'"}
+{"prompt": "find memcached servers in Cayman Islands\n", "completion": "finder~shodan search memcached country:'KY'"}
+{"prompt": "find portainer instances in Cayman Islands\n", "completion": "finder~shodan search portainer country:'KY'"}
+{"prompt": "find docker hosts in Cayman Islands\n", "completion": "finder~shodan search docker country:'KY'"}
+{"prompt": "find cameras in Cayman Islands\n", "completion": "finder~shodan search cameras country:'KY'"}
+{"prompt": "find routers in Cayman Islands\n", "completion": "finder~shodan search routers country:'KY'"}
+{"prompt": "find apache servers in Laos\n", "completion": "finder~shodan search apache country:'LA'"}
+{"prompt": "find memcached servers in Laos\n", "completion": "finder~shodan search memcached country:'LA'"}
+{"prompt": "find portainer instances in Laos\n", "completion": "finder~shodan search portainer country:'LA'"}
+{"prompt": "find docker hosts in Laos\n", "completion": "finder~shodan search docker country:'LA'"}
+{"prompt": "find cameras in Laos\n", "completion": "finder~shodan search cameras country:'LA'"}
+{"prompt": "find routers in Laos\n", "completion": "finder~shodan search routers country:'LA'"}
+{"prompt": "find apache servers in Saint Lucia\n", "completion": "finder~shodan search apache country:'LC'"}
+{"prompt": "find memcached servers in Saint Lucia\n", "completion": "finder~shodan search memcached country:'LC'"}
+{"prompt": "find portainer instances in Saint Lucia\n", "completion": "finder~shodan search portainer country:'LC'"}
+{"prompt": "find docker hosts in Saint Lucia\n", "completion": "finder~shodan search docker country:'LC'"}
+{"prompt": "find cameras in Saint Lucia\n", "completion": "finder~shodan search cameras country:'LC'"}
+{"prompt": "find routers in Saint Lucia\n", "completion": "finder~shodan search routers country:'LC'"}
+{"prompt": "find apache servers in Sri Lanka\n", "completion": "finder~shodan search apache country:'LK'"}
+{"prompt": "find memcached servers in Sri Lanka\n", "completion": "finder~shodan search memcached country:'LK'"}
+{"prompt": "find portainer instances in Sri Lanka\n", "completion": "finder~shodan search portainer country:'LK'"}
+{"prompt": "find docker hosts in Sri Lanka\n", "completion": "finder~shodan search docker country:'LK'"}
+{"prompt": "find cameras in Sri Lanka\n", "completion": "finder~shodan search cameras country:'LK'"}
+{"prompt": "find routers in Sri Lanka\n", "completion": "finder~shodan search routers country:'LK'"}
+{"prompt": "find apache servers in Lesotho\n", "completion": "finder~shodan search apache country:'LS'"}
+{"prompt": "find memcached servers in Lesotho\n", "completion": "finder~shodan search memcached country:'LS'"}
+{"prompt": "find portainer instances in Lesotho\n", "completion": "finder~shodan search portainer country:'LS'"}
+{"prompt": "find docker hosts in Lesotho\n", "completion": "finder~shodan search docker country:'LS'"}
+{"prompt": "find cameras in Lesotho\n", "completion": "finder~shodan search cameras country:'LS'"}
+{"prompt": "find routers in Lesotho\n", "completion": "finder~shodan search routers country:'LS'"}
+{"prompt": "find apache servers in Luxembourg\n", "completion": "finder~shodan search apache country:'LU'"}
+{"prompt": "find memcached servers in Luxembourg\n", "completion": "finder~shodan search memcached country:'LU'"}
+{"prompt": "find portainer instances in Luxembourg\n", "completion": "finder~shodan search portainer country:'LU'"}
+{"prompt": "find docker hosts in Luxembourg\n", "completion": "finder~shodan search docker country:'LU'"}
+{"prompt": "find cameras in Luxembourg\n", "completion": "finder~shodan search cameras country:'LU'"}
+{"prompt": "find routers in Luxembourg\n", "completion": "finder~shodan search routers country:'LU'"}
+{"prompt": "find apache servers in Libya\n", "completion": "finder~shodan search apache country:'LY'"}
+{"prompt": "find memcached servers in Libya\n", "completion": "finder~shodan search memcached country:'LY'"}
+{"prompt": "find portainer instances in Libya\n", "completion": "finder~shodan search portainer country:'LY'"}
+{"prompt": "find docker hosts in Libya\n", "completion": "finder~shodan search docker country:'LY'"}
+{"prompt": "find cameras in Libya\n", "completion": "finder~shodan search cameras country:'LY'"}
+{"prompt": "find routers in Libya\n", "completion": "finder~shodan search routers country:'LY'"}
+{"prompt": "find apache servers in Monaco\n", "completion": "finder~shodan search apache country:'MC'"}
+{"prompt": "find memcached servers in Monaco\n", "completion": "finder~shodan search memcached country:'MC'"}
+{"prompt": "find portainer instances in Monaco\n", "completion": "finder~shodan search portainer country:'MC'"}
+{"prompt": "find docker hosts in Monaco\n", "completion": "finder~shodan search docker country:'MC'"}
+{"prompt": "find cameras in Monaco\n", "completion": "finder~shodan search cameras country:'MC'"}
+{"prompt": "find routers in Monaco\n", "completion": "finder~shodan search routers country:'MC'"}
+{"prompt": "find apache servers in Madagascar\n", "completion": "finder~shodan search apache country:'MG'"}
+{"prompt": "find memcached servers in Madagascar\n", "completion": "finder~shodan search memcached country:'MG'"}
+{"prompt": "find portainer instances in Madagascar\n", "completion": "finder~shodan search portainer country:'MG'"}
+{"prompt": "find docker hosts in Madagascar\n", "completion": "finder~shodan search docker country:'MG'"}
+{"prompt": "find cameras in Madagascar\n", "completion": "finder~shodan search cameras country:'MG'"}
+{"prompt": "find routers in Madagascar\n", "completion": "finder~shodan search routers country:'MG'"}
+{"prompt": "find apache servers in Macedonia (prev. Yug.)\n", "completion": "finder~shodan search apache country:'MK'"}
+{"prompt": "find memcached servers in Macedonia (prev. Yug.)\n", "completion": "finder~shodan search memcached country:'MK'"}
+{"prompt": "find portainer instances in Macedonia (prev. Yug.)\n", "completion": "finder~shodan search portainer country:'MK'"}
+{"prompt": "find docker hosts in Macedonia (prev. Yug.)\n", "completion": "finder~shodan search docker country:'MK'"}
+{"prompt": "find cameras in Macedonia (prev. Yug.)\n", "completion": "finder~shodan search cameras country:'MK'"}
+{"prompt": "find routers in Macedonia (prev. Yug.)\n", "completion": "finder~shodan search routers country:'MK'"}
+{"prompt": "find apache servers in Myanmar\n", "completion": "finder~shodan search apache country:'MM'"}
+{"prompt": "find memcached servers in Myanmar\n", "completion": "finder~shodan search memcached country:'MM'"}
+{"prompt": "find portainer instances in Myanmar\n", "completion": "finder~shodan search portainer country:'MM'"}
+{"prompt": "find docker hosts in Myanmar\n", "completion": "finder~shodan search docker country:'MM'"}
+{"prompt": "find cameras in Myanmar\n", "completion": "finder~shodan search cameras country:'MM'"}
+{"prompt": "find routers in Myanmar\n", "completion": "finder~shodan search routers country:'MM'"}
+{"prompt": "find apache servers in Macau\n", "completion": "finder~shodan search apache country:'MO'"}
+{"prompt": "find memcached servers in Macau\n", "completion": "finder~shodan search memcached country:'MO'"}
+{"prompt": "find portainer instances in Macau\n", "completion": "finder~shodan search portainer country:'MO'"}
+{"prompt": "find docker hosts in Macau\n", "completion": "finder~shodan search docker country:'MO'"}
+{"prompt": "find cameras in Macau\n", "completion": "finder~shodan search cameras country:'MO'"}
+{"prompt": "find routers in Macau\n", "completion": "finder~shodan search routers country:'MO'"}
+{"prompt": "find apache servers in Martinique (Fr.)\n", "completion": "finder~shodan search apache country:'MQ'"}
+{"prompt": "find memcached servers in Martinique (Fr.)\n", "completion": "finder~shodan search memcached country:'MQ'"}
+{"prompt": "find portainer instances in Martinique (Fr.)\n", "completion": "finder~shodan search portainer country:'MQ'"}
+{"prompt": "find docker hosts in Martinique (Fr.)\n", "completion": "finder~shodan search docker country:'MQ'"}
+{"prompt": "find cameras in Martinique (Fr.)\n", "completion": "finder~shodan search cameras country:'MQ'"}
+{"prompt": "find routers in Martinique (Fr.)\n", "completion": "finder~shodan search routers country:'MQ'"}
+{"prompt": "find apache servers in Montserrat\n", "completion": "finder~shodan search apache country:'MS'"}
+{"prompt": "find memcached servers in Montserrat\n", "completion": "finder~shodan search memcached country:'MS'"}
+{"prompt": "find portainer instances in Montserrat\n", "completion": "finder~shodan search portainer country:'MS'"}
+{"prompt": "find docker hosts in Montserrat\n", "completion": "finder~shodan search docker country:'MS'"}
+{"prompt": "find cameras in Montserrat\n", "completion": "finder~shodan search cameras country:'MS'"}
+{"prompt": "find routers in Montserrat\n", "completion": "finder~shodan search routers country:'MS'"}
+{"prompt": "find apache servers in Mauritius\n", "completion": "finder~shodan search apache country:'MU'"}
+{"prompt": "find memcached servers in Mauritius\n", "completion": "finder~shodan search memcached country:'MU'"}
+{"prompt": "find portainer instances in Mauritius\n", "completion": "finder~shodan search portainer country:'MU'"}
+{"prompt": "find docker hosts in Mauritius\n", "completion": "finder~shodan search docker country:'MU'"}
+{"prompt": "find cameras in Mauritius\n", "completion": "finder~shodan search cameras country:'MU'"}
+{"prompt": "find routers in Mauritius\n", "completion": "finder~shodan search routers country:'MU'"}
+{"prompt": "find apache servers in Malawi\n", "completion": "finder~shodan search apache country:'MW'"}
+{"prompt": "find memcached servers in Malawi\n", "completion": "finder~shodan search memcached country:'MW'"}
+{"prompt": "find portainer instances in Malawi\n", "completion": "finder~shodan search portainer country:'MW'"}
+{"prompt": "find docker hosts in Malawi\n", "completion": "finder~shodan search docker country:'MW'"}
+{"prompt": "find cameras in Malawi\n", "completion": "finder~shodan search cameras country:'MW'"}
+{"prompt": "find routers in Malawi\n", "completion": "finder~shodan search routers country:'MW'"}
+{"prompt": "find apache servers in Malaysia\n", "completion": "finder~shodan search apache country:'MY'"}
+{"prompt": "find memcached servers in Malaysia\n", "completion": "finder~shodan search memcached country:'MY'"}
+{"prompt": "find portainer instances in Malaysia\n", "completion": "finder~shodan search portainer country:'MY'"}
+{"prompt": "find docker hosts in Malaysia\n", "completion": "finder~shodan search docker country:'MY'"}
+{"prompt": "find cameras in Malaysia\n", "completion": "finder~shodan search cameras country:'MY'"}
+{"prompt": "find routers in Malaysia\n", "completion": "finder~shodan search routers country:'MY'"}
+{"prompt": "find apache servers in Namibia\n", "completion": "finder~shodan search apache country:'nan'"}
+{"prompt": "find memcached servers in Namibia\n", "completion": "finder~shodan search memcached country:'nan'"}
+{"prompt": "find portainer instances in Namibia\n", "completion": "finder~shodan search portainer country:'nan'"}
+{"prompt": "find docker hosts in Namibia\n", "completion": "finder~shodan search docker country:'nan'"}
+{"prompt": "find cameras in Namibia\n", "completion": "finder~shodan search cameras country:'nan'"}
+{"prompt": "find routers in Namibia\n", "completion": "finder~shodan search routers country:'nan'"}
+{"prompt": "find apache servers in Niger\n", "completion": "finder~shodan search apache country:'NE'"}
+{"prompt": "find memcached servers in Niger\n", "completion": "finder~shodan search memcached country:'NE'"}
+{"prompt": "find portainer instances in Niger\n", "completion": "finder~shodan search portainer country:'NE'"}
+{"prompt": "find docker hosts in Niger\n", "completion": "finder~shodan search docker country:'NE'"}
+{"prompt": "find cameras in Niger\n", "completion": "finder~shodan search cameras country:'NE'"}
+{"prompt": "find routers in Niger\n", "completion": "finder~shodan search routers country:'NE'"}
+{"prompt": "find apache servers in Nigeria\n", "completion": "finder~shodan search apache country:'NG'"}
+{"prompt": "find memcached servers in Nigeria\n", "completion": "finder~shodan search memcached country:'NG'"}
+{"prompt": "find portainer instances in Nigeria\n", "completion": "finder~shodan search portainer country:'NG'"}
+{"prompt": "find docker hosts in Nigeria\n", "completion": "finder~shodan search docker country:'NG'"}
+{"prompt": "find cameras in Nigeria\n", "completion": "finder~shodan search cameras country:'NG'"}
+{"prompt": "find routers in Nigeria\n", "completion": "finder~shodan search routers country:'NG'"}
+{"prompt": "find apache servers in Netherlands\n", "completion": "finder~shodan search apache country:'NL'"}
+{"prompt": "find memcached servers in Netherlands\n", "completion": "finder~shodan search memcached country:'NL'"}
+{"prompt": "find portainer instances in Netherlands\n", "completion": "finder~shodan search portainer country:'NL'"}
+{"prompt": "find docker hosts in Netherlands\n", "completion": "finder~shodan search docker country:'NL'"}
+{"prompt": "find cameras in Netherlands\n", "completion": "finder~shodan search cameras country:'NL'"}
+{"prompt": "find routers in Netherlands\n", "completion": "finder~shodan search routers country:'NL'"}
+{"prompt": "find apache servers in Nepal\n", "completion": "finder~shodan search apache country:'NP'"}
+{"prompt": "find memcached servers in Nepal\n", "completion": "finder~shodan search memcached country:'NP'"}
+{"prompt": "find portainer instances in Nepal\n", "completion": "finder~shodan search portainer country:'NP'"}
+{"prompt": "find docker hosts in Nepal\n", "completion": "finder~shodan search docker country:'NP'"}
+{"prompt": "find cameras in Nepal\n", "completion": "finder~shodan search cameras country:'NP'"}
+{"prompt": "find routers in Nepal\n", "completion": "finder~shodan search routers country:'NP'"}
+{"prompt": "find apache servers in Niue\n", "completion": "finder~shodan search apache country:'NU'"}
+{"prompt": "find memcached servers in Niue\n", "completion": "finder~shodan search memcached country:'NU'"}
+{"prompt": "find portainer instances in Niue\n", "completion": "finder~shodan search portainer country:'NU'"}
+{"prompt": "find docker hosts in Niue\n", "completion": "finder~shodan search docker country:'NU'"}
+{"prompt": "find cameras in Niue\n", "completion": "finder~shodan search cameras country:'NU'"}
+{"prompt": "find routers in Niue\n", "completion": "finder~shodan search routers country:'NU'"}
+{"prompt": "find apache servers in Oman\n", "completion": "finder~shodan search apache country:'OM'"}
+{"prompt": "find memcached servers in Oman\n", "completion": "finder~shodan search memcached country:'OM'"}
+{"prompt": "find portainer instances in Oman\n", "completion": "finder~shodan search portainer country:'OM'"}
+{"prompt": "find docker hosts in Oman\n", "completion": "finder~shodan search docker country:'OM'"}
+{"prompt": "find cameras in Oman\n", "completion": "finder~shodan search cameras country:'OM'"}
+{"prompt": "find routers in Oman\n", "completion": "finder~shodan search routers country:'OM'"}
+{"prompt": "find apache servers in Peru\n", "completion": "finder~shodan search apache country:'PE'"}
+{"prompt": "find memcached servers in Peru\n", "completion": "finder~shodan search memcached country:'PE'"}
+{"prompt": "find portainer instances in Peru\n", "completion": "finder~shodan search portainer country:'PE'"}
+{"prompt": "find docker hosts in Peru\n", "completion": "finder~shodan search docker country:'PE'"}
+{"prompt": "find cameras in Peru\n", "completion": "finder~shodan search cameras country:'PE'"}
+{"prompt": "find routers in Peru\n", "completion": "finder~shodan search routers country:'PE'"}
+{"prompt": "find apache servers in Papua New Guinea\n", "completion": "finder~shodan search apache country:'PG'"}
+{"prompt": "find memcached servers in Papua New Guinea\n", "completion": "finder~shodan search memcached country:'PG'"}
+{"prompt": "find portainer instances in Papua New Guinea\n", "completion": "finder~shodan search portainer country:'PG'"}
+{"prompt": "find docker hosts in Papua New Guinea\n", "completion": "finder~shodan search docker country:'PG'"}
+{"prompt": "find cameras in Papua New Guinea\n", "completion": "finder~shodan search cameras country:'PG'"}
+{"prompt": "find routers in Papua New Guinea\n", "completion": "finder~shodan search routers country:'PG'"}
+{"prompt": "find apache servers in Pakistan\n", "completion": "finder~shodan search apache country:'PK'"}
+{"prompt": "find memcached servers in Pakistan\n", "completion": "finder~shodan search memcached country:'PK'"}
+{"prompt": "find portainer instances in Pakistan\n", "completion": "finder~shodan search portainer country:'PK'"}
+{"prompt": "find docker hosts in Pakistan\n", "completion": "finder~shodan search docker country:'PK'"}
+{"prompt": "find cameras in Pakistan\n", "completion": "finder~shodan search cameras country:'PK'"}
+{"prompt": "find routers in Pakistan\n", "completion": "finder~shodan search routers country:'PK'"}
+{"prompt": "find apache servers in St. Pierre & Miquelon\n", "completion": "finder~shodan search apache country:'PM'"}
+{"prompt": "find memcached servers in St. Pierre & Miquelon\n", "completion": "finder~shodan search memcached country:'PM'"}
+{"prompt": "find portainer instances in St. Pierre & Miquelon\n", "completion": "finder~shodan search portainer country:'PM'"}
+{"prompt": "find docker hosts in St. Pierre & Miquelon\n", "completion": "finder~shodan search docker country:'PM'"}
+{"prompt": "find cameras in St. Pierre & Miquelon\n", "completion": "finder~shodan search cameras country:'PM'"}
+{"prompt": "find routers in St. Pierre & Miquelon\n", "completion": "finder~shodan search routers country:'PM'"}
+{"prompt": "find apache servers in Puerto Rico (US)\n", "completion": "finder~shodan search apache country:'PR'"}
+{"prompt": "find memcached servers in Puerto Rico (US)\n", "completion": "finder~shodan search memcached country:'PR'"}
+{"prompt": "find portainer instances in Puerto Rico (US)\n", "completion": "finder~shodan search portainer country:'PR'"}
+{"prompt": "find docker hosts in Puerto Rico (US)\n", "completion": "finder~shodan search docker country:'PR'"}
+{"prompt": "find cameras in Puerto Rico (US)\n", "completion": "finder~shodan search cameras country:'PR'"}
+{"prompt": "find routers in Puerto Rico (US)\n", "completion": "finder~shodan search routers country:'PR'"}
+{"prompt": "find apache servers in Palau\n", "completion": "finder~shodan search apache country:'PW'"}
+{"prompt": "find memcached servers in Palau\n", "completion": "finder~shodan search memcached country:'PW'"}
+{"prompt": "find portainer instances in Palau\n", "completion": "finder~shodan search portainer country:'PW'"}
+{"prompt": "find docker hosts in Palau\n", "completion": "finder~shodan search docker country:'PW'"}
+{"prompt": "find cameras in Palau\n", "completion": "finder~shodan search cameras country:'PW'"}
+{"prompt": "find routers in Palau\n", "completion": "finder~shodan search routers country:'PW'"}
+{"prompt": "find apache servers in Qatar\n", "completion": "finder~shodan search apache country:'QA'"}
+{"prompt": "find memcached servers in Qatar\n", "completion": "finder~shodan search memcached country:'QA'"}
+{"prompt": "find portainer instances in Qatar\n", "completion": "finder~shodan search portainer country:'QA'"}
+{"prompt": "find docker hosts in Qatar\n", "completion": "finder~shodan search docker country:'QA'"}
+{"prompt": "find cameras in Qatar\n", "completion": "finder~shodan search cameras country:'QA'"}
+{"prompt": "find routers in Qatar\n", "completion": "finder~shodan search routers country:'QA'"}
+{"prompt": "find apache servers in Romania\n", "completion": "finder~shodan search apache country:'RO'"}
+{"prompt": "find memcached servers in Romania\n", "completion": "finder~shodan search memcached country:'RO'"}
+{"prompt": "find portainer instances in Romania\n", "completion": "finder~shodan search portainer country:'RO'"}
+{"prompt": "find docker hosts in Romania\n", "completion": "finder~shodan search docker country:'RO'"}
+{"prompt": "find cameras in Romania\n", "completion": "finder~shodan search cameras country:'RO'"}
+{"prompt": "find routers in Romania\n", "completion": "finder~shodan search routers country:'RO'"}
+{"prompt": "find apache servers in Rwanda\n", "completion": "finder~shodan search apache country:'RW'"}
+{"prompt": "find memcached servers in Rwanda\n", "completion": "finder~shodan search memcached country:'RW'"}
+{"prompt": "find portainer instances in Rwanda\n", "completion": "finder~shodan search portainer country:'RW'"}
+{"prompt": "find docker hosts in Rwanda\n", "completion": "finder~shodan search docker country:'RW'"}
+{"prompt": "find cameras in Rwanda\n", "completion": "finder~shodan search cameras country:'RW'"}
+{"prompt": "find routers in Rwanda\n", "completion": "finder~shodan search routers country:'RW'"}
+{"prompt": "find apache servers in Solomon Islands\n", "completion": "finder~shodan search apache country:'SB'"}
+{"prompt": "find memcached servers in Solomon Islands\n", "completion": "finder~shodan search memcached country:'SB'"}
+{"prompt": "find portainer instances in Solomon Islands\n", "completion": "finder~shodan search portainer country:'SB'"}
+{"prompt": "find docker hosts in Solomon Islands\n", "completion": "finder~shodan search docker country:'SB'"}
+{"prompt": "find cameras in Solomon Islands\n", "completion": "finder~shodan search cameras country:'SB'"}
+{"prompt": "find routers in Solomon Islands\n", "completion": "finder~shodan search routers country:'SB'"}
+{"prompt": "find apache servers in Sudan\n", "completion": "finder~shodan search apache country:'SD'"}
+{"prompt": "find memcached servers in Sudan\n", "completion": "finder~shodan search memcached country:'SD'"}
+{"prompt": "find portainer instances in Sudan\n", "completion": "finder~shodan search portainer country:'SD'"}
+{"prompt": "find docker hosts in Sudan\n", "completion": "finder~shodan search docker country:'SD'"}
+{"prompt": "find cameras in Sudan\n", "completion": "finder~shodan search cameras country:'SD'"}
+{"prompt": "find routers in Sudan\n", "completion": "finder~shodan search routers country:'SD'"}
+{"prompt": "find apache servers in Singapore\n", "completion": "finder~shodan search apache country:'SG'"}
+{"prompt": "find memcached servers in Singapore\n", "completion": "finder~shodan search memcached country:'SG'"}
+{"prompt": "find portainer instances in Singapore\n", "completion": "finder~shodan search portainer country:'SG'"}
+{"prompt": "find docker hosts in Singapore\n", "completion": "finder~shodan search docker country:'SG'"}
+{"prompt": "find cameras in Singapore\n", "completion": "finder~shodan search cameras country:'SG'"}
+{"prompt": "find routers in Singapore\n", "completion": "finder~shodan search routers country:'SG'"}
+{"prompt": "find apache servers in Slovenia\n", "completion": "finder~shodan search apache country:'SI'"}
+{"prompt": "find memcached servers in Slovenia\n", "completion": "finder~shodan search memcached country:'SI'"}
+{"prompt": "find portainer instances in Slovenia\n", "completion": "finder~shodan search portainer country:'SI'"}
+{"prompt": "find docker hosts in Slovenia\n", "completion": "finder~shodan search docker country:'SI'"}
+{"prompt": "find cameras in Slovenia\n", "completion": "finder~shodan search cameras country:'SI'"}
+{"prompt": "find routers in Slovenia\n", "completion": "finder~shodan search routers country:'SI'"}
+{"prompt": "find apache servers in Slovakia (Slovak Republic)\n", "completion": "finder~shodan search apache country:'SK'"}
+{"prompt": "find memcached servers in Slovakia (Slovak Republic)\n", "completion": "finder~shodan search memcached country:'SK'"}
+{"prompt": "find portainer instances in Slovakia (Slovak Republic)\n", "completion": "finder~shodan search portainer country:'SK'"}
+{"prompt": "find docker hosts in Slovakia (Slovak Republic)\n", "completion": "finder~shodan search docker country:'SK'"}
+{"prompt": "find cameras in Slovakia (Slovak Republic)\n", "completion": "finder~shodan search cameras country:'SK'"}
+{"prompt": "find routers in Slovakia (Slovak Republic)\n", "completion": "finder~shodan search routers country:'SK'"}
+{"prompt": "find apache servers in San Marino\n", "completion": "finder~shodan search apache country:'SM'"}
+{"prompt": "find memcached servers in San Marino\n", "completion": "finder~shodan search memcached country:'SM'"}
+{"prompt": "find portainer instances in San Marino\n", "completion": "finder~shodan search portainer country:'SM'"}
+{"prompt": "find docker hosts in San Marino\n", "completion": "finder~shodan search docker country:'SM'"}
+{"prompt": "find cameras in San Marino\n", "completion": "finder~shodan search cameras country:'SM'"}
+{"prompt": "find routers in San Marino\n", "completion": "finder~shodan search routers country:'SM'"}
+{"prompt": "find apache servers in Somalia\n", "completion": "finder~shodan search apache country:'SO'"}
+{"prompt": "find memcached servers in Somalia\n", "completion": "finder~shodan search memcached country:'SO'"}
+{"prompt": "find portainer instances in Somalia\n", "completion": "finder~shodan search portainer country:'SO'"}
+{"prompt": "find docker hosts in Somalia\n", "completion": "finder~shodan search docker country:'SO'"}
+{"prompt": "find cameras in Somalia\n", "completion": "finder~shodan search cameras country:'SO'"}
+{"prompt": "find routers in Somalia\n", "completion": "finder~shodan search routers country:'SO'"}
+{"prompt": "find apache servers in St. Tome and Principe\n", "completion": "finder~shodan search apache country:'ST'"}
+{"prompt": "find memcached servers in St. Tome and Principe\n", "completion": "finder~shodan search memcached country:'ST'"}
+{"prompt": "find portainer instances in St. Tome and Principe\n", "completion": "finder~shodan search portainer country:'ST'"}
+{"prompt": "find docker hosts in St. Tome and Principe\n", "completion": "finder~shodan search docker country:'ST'"}
+{"prompt": "find cameras in St. Tome and Principe\n", "completion": "finder~shodan search cameras country:'ST'"}
+{"prompt": "find routers in St. Tome and Principe\n", "completion": "finder~shodan search routers country:'ST'"}
+{"prompt": "find apache servers in El Salvador\n", "completion": "finder~shodan search apache country:'SV'"}
+{"prompt": "find memcached servers in El Salvador\n", "completion": "finder~shodan search memcached country:'SV'"}
+{"prompt": "find portainer instances in El Salvador\n", "completion": "finder~shodan search portainer country:'SV'"}
+{"prompt": "find docker hosts in El Salvador\n", "completion": "finder~shodan search docker country:'SV'"}
+{"prompt": "find cameras in El Salvador\n", "completion": "finder~shodan search cameras country:'SV'"}
+{"prompt": "find routers in El Salvador\n", "completion": "finder~shodan search routers country:'SV'"}
+{"prompt": "find apache servers in Swaziland\n", "completion": "finder~shodan search apache country:'SZ'"}
+{"prompt": "find memcached servers in Swaziland\n", "completion": "finder~shodan search memcached country:'SZ'"}
+{"prompt": "find portainer instances in Swaziland\n", "completion": "finder~shodan search portainer country:'SZ'"}
+{"prompt": "find docker hosts in Swaziland\n", "completion": "finder~shodan search docker country:'SZ'"}
+{"prompt": "find cameras in Swaziland\n", "completion": "finder~shodan search cameras country:'SZ'"}
+{"prompt": "find routers in Swaziland\n", "completion": "finder~shodan search routers country:'SZ'"}
+{"prompt": "find apache servers in Chad\n", "completion": "finder~shodan search apache country:'TD'"}
+{"prompt": "find memcached servers in Chad\n", "completion": "finder~shodan search memcached country:'TD'"}
+{"prompt": "find portainer instances in Chad\n", "completion": "finder~shodan search portainer country:'TD'"}
+{"prompt": "find docker hosts in Chad\n", "completion": "finder~shodan search docker country:'TD'"}
+{"prompt": "find cameras in Chad\n", "completion": "finder~shodan search cameras country:'TD'"}
+{"prompt": "find routers in Chad\n", "completion": "finder~shodan search routers country:'TD'"}
+{"prompt": "find apache servers in Togo\n", "completion": "finder~shodan search apache country:'TG'"}
+{"prompt": "find memcached servers in Togo\n", "completion": "finder~shodan search memcached country:'TG'"}
+{"prompt": "find portainer instances in Togo\n", "completion": "finder~shodan search portainer country:'TG'"}
+{"prompt": "find docker hosts in Togo\n", "completion": "finder~shodan search docker country:'TG'"}
+{"prompt": "find cameras in Togo\n", "completion": "finder~shodan search cameras country:'TG'"}
+{"prompt": "find routers in Togo\n", "completion": "finder~shodan search routers country:'TG'"}
+{"prompt": "find apache servers in Tadjikistan\n", "completion": "finder~shodan search apache country:'TJ'"}
+{"prompt": "find memcached servers in Tadjikistan\n", "completion": "finder~shodan search memcached country:'TJ'"}
+{"prompt": "find portainer instances in Tadjikistan\n", "completion": "finder~shodan search portainer country:'TJ'"}
+{"prompt": "find docker hosts in Tadjikistan\n", "completion": "finder~shodan search docker country:'TJ'"}
+{"prompt": "find cameras in Tadjikistan\n", "completion": "finder~shodan search cameras country:'TJ'"}
+{"prompt": "find routers in Tadjikistan\n", "completion": "finder~shodan search routers country:'TJ'"}
+{"prompt": "find apache servers in Turkmenistan\n", "completion": "finder~shodan search apache country:'TM'"}
+{"prompt": "find memcached servers in Turkmenistan\n", "completion": "finder~shodan search memcached country:'TM'"}
+{"prompt": "find portainer instances in Turkmenistan\n", "completion": "finder~shodan search portainer country:'TM'"}
+{"prompt": "find docker hosts in Turkmenistan\n", "completion": "finder~shodan search docker country:'TM'"}
+{"prompt": "find cameras in Turkmenistan\n", "completion": "finder~shodan search cameras country:'TM'"}
+{"prompt": "find routers in Turkmenistan\n", "completion": "finder~shodan search routers country:'TM'"}
+{"prompt": "find apache servers in Tonga\n", "completion": "finder~shodan search apache country:'TO'"}
+{"prompt": "find memcached servers in Tonga\n", "completion": "finder~shodan search memcached country:'TO'"}
+{"prompt": "find portainer instances in Tonga\n", "completion": "finder~shodan search portainer country:'TO'"}
+{"prompt": "find docker hosts in Tonga\n", "completion": "finder~shodan search docker country:'TO'"}
+{"prompt": "find cameras in Tonga\n", "completion": "finder~shodan search cameras country:'TO'"}
+{"prompt": "find routers in Tonga\n", "completion": "finder~shodan search routers country:'TO'"}
+{"prompt": "find apache servers in Turkey\n", "completion": "finder~shodan search apache country:'TR'"}
+{"prompt": "find memcached servers in Turkey\n", "completion": "finder~shodan search memcached country:'TR'"}
+{"prompt": "find portainer instances in Turkey\n", "completion": "finder~shodan search portainer country:'TR'"}
+{"prompt": "find docker hosts in Turkey\n", "completion": "finder~shodan search docker country:'TR'"}
+{"prompt": "find cameras in Turkey\n", "completion": "finder~shodan search cameras country:'TR'"}
+{"prompt": "find routers in Turkey\n", "completion": "finder~shodan search routers country:'TR'"}
+{"prompt": "find apache servers in Tuvalu\n", "completion": "finder~shodan search apache country:'TV'"}
+{"prompt": "find memcached servers in Tuvalu\n", "completion": "finder~shodan search memcached country:'TV'"}
+{"prompt": "find portainer instances in Tuvalu\n", "completion": "finder~shodan search portainer country:'TV'"}
+{"prompt": "find docker hosts in Tuvalu\n", "completion": "finder~shodan search docker country:'TV'"}
+{"prompt": "find cameras in Tuvalu\n", "completion": "finder~shodan search cameras country:'TV'"}
+{"prompt": "find routers in Tuvalu\n", "completion": "finder~shodan search routers country:'TV'"}
+{"prompt": "find apache servers in Tanzania\n", "completion": "finder~shodan search apache country:'TZ'"}
+{"prompt": "find memcached servers in Tanzania\n", "completion": "finder~shodan search memcached country:'TZ'"}
+{"prompt": "find portainer instances in Tanzania\n", "completion": "finder~shodan search portainer country:'TZ'"}
+{"prompt": "find docker hosts in Tanzania\n", "completion": "finder~shodan search docker country:'TZ'"}
+{"prompt": "find cameras in Tanzania\n", "completion": "finder~shodan search cameras country:'TZ'"}
+{"prompt": "find routers in Tanzania\n", "completion": "finder~shodan search routers country:'TZ'"}
+{"prompt": "find apache servers in Uganda\n", "completion": "finder~shodan search apache country:'UG'"}
+{"prompt": "find memcached servers in Uganda\n", "completion": "finder~shodan search memcached country:'UG'"}
+{"prompt": "find portainer instances in Uganda\n", "completion": "finder~shodan search portainer country:'UG'"}
+{"prompt": "find docker hosts in Uganda\n", "completion": "finder~shodan search docker country:'UG'"}
+{"prompt": "find cameras in Uganda\n", "completion": "finder~shodan search cameras country:'UG'"}
+{"prompt": "find routers in Uganda\n", "completion": "finder~shodan search routers country:'UG'"}
+{"prompt": "find apache servers in US Minor outlying Islands\n", "completion": "finder~shodan search apache country:'UM'"}
+{"prompt": "find memcached servers in US Minor outlying Islands\n", "completion": "finder~shodan search memcached country:'UM'"}
+{"prompt": "find portainer instances in US Minor outlying Islands\n", "completion": "finder~shodan search portainer country:'UM'"}
+{"prompt": "find docker hosts in US Minor outlying Islands\n", "completion": "finder~shodan search docker country:'UM'"}
+{"prompt": "find cameras in US Minor outlying Islands\n", "completion": "finder~shodan search cameras country:'UM'"}
+{"prompt": "find routers in US Minor outlying Islands\n", "completion": "finder~shodan search routers country:'UM'"}
+{"prompt": "find apache servers in Uruguay\n", "completion": "finder~shodan search apache country:'UY'"}
+{"prompt": "find memcached servers in Uruguay\n", "completion": "finder~shodan search memcached country:'UY'"}
+{"prompt": "find portainer instances in Uruguay\n", "completion": "finder~shodan search portainer country:'UY'"}
+{"prompt": "find docker hosts in Uruguay\n", "completion": "finder~shodan search docker country:'UY'"}
+{"prompt": "find cameras in Uruguay\n", "completion": "finder~shodan search cameras country:'UY'"}
+{"prompt": "find routers in Uruguay\n", "completion": "finder~shodan search routers country:'UY'"}
+{"prompt": "find apache servers in Vatican City State\n", "completion": "finder~shodan search apache country:'VA'"}
+{"prompt": "find memcached servers in Vatican City State\n", "completion": "finder~shodan search memcached country:'VA'"}
+{"prompt": "find portainer instances in Vatican City State\n", "completion": "finder~shodan search portainer country:'VA'"}
+{"prompt": "find docker hosts in Vatican City State\n", "completion": "finder~shodan search docker country:'VA'"}
+{"prompt": "find cameras in Vatican City State\n", "completion": "finder~shodan search cameras country:'VA'"}
+{"prompt": "find routers in Vatican City State\n", "completion": "finder~shodan search routers country:'VA'"}
+{"prompt": "find apache servers in Venezuela\n", "completion": "finder~shodan search apache country:'VE'"}
+{"prompt": "find memcached servers in Venezuela\n", "completion": "finder~shodan search memcached country:'VE'"}
+{"prompt": "find portainer instances in Venezuela\n", "completion": "finder~shodan search portainer country:'VE'"}
+{"prompt": "find docker hosts in Venezuela\n", "completion": "finder~shodan search docker country:'VE'"}
+{"prompt": "find cameras in Venezuela\n", "completion": "finder~shodan search cameras country:'VE'"}
+{"prompt": "find routers in Venezuela\n", "completion": "finder~shodan search routers country:'VE'"}
+{"prompt": "find apache servers in Virgin Islands (US)\n", "completion": "finder~shodan search apache country:'VI'"}
+{"prompt": "find memcached servers in Virgin Islands (US)\n", "completion": "finder~shodan search memcached country:'VI'"}
+{"prompt": "find portainer instances in Virgin Islands (US)\n", "completion": "finder~shodan search portainer country:'VI'"}
+{"prompt": "find docker hosts in Virgin Islands (US)\n", "completion": "finder~shodan search docker country:'VI'"}
+{"prompt": "find cameras in Virgin Islands (US)\n", "completion": "finder~shodan search cameras country:'VI'"}
+{"prompt": "find routers in Virgin Islands (US)\n", "completion": "finder~shodan search routers country:'VI'"}
+{"prompt": "find apache servers in Vanuatu\n", "completion": "finder~shodan search apache country:'VU'"}
+{"prompt": "find memcached servers in Vanuatu\n", "completion": "finder~shodan search memcached country:'VU'"}
+{"prompt": "find portainer instances in Vanuatu\n", "completion": "finder~shodan search portainer country:'VU'"}
+{"prompt": "find docker hosts in Vanuatu\n", "completion": "finder~shodan search docker country:'VU'"}
+{"prompt": "find cameras in Vanuatu\n", "completion": "finder~shodan search cameras country:'VU'"}
+{"prompt": "find routers in Vanuatu\n", "completion": "finder~shodan search routers country:'VU'"}
+{"prompt": "find apache servers in Samoa\n", "completion": "finder~shodan search apache country:'WS'"}
+{"prompt": "find memcached servers in Samoa\n", "completion": "finder~shodan search memcached country:'WS'"}
+{"prompt": "find portainer instances in Samoa\n", "completion": "finder~shodan search portainer country:'WS'"}
+{"prompt": "find docker hosts in Samoa\n", "completion": "finder~shodan search docker country:'WS'"}
+{"prompt": "find cameras in Samoa\n", "completion": "finder~shodan search cameras country:'WS'"}
+{"prompt": "find routers in Samoa\n", "completion": "finder~shodan search routers country:'WS'"}
+{"prompt": "find apache servers in Mayotte\n", "completion": "finder~shodan search apache country:'YT'"}
+{"prompt": "find memcached servers in Mayotte\n", "completion": "finder~shodan search memcached country:'YT'"}
+{"prompt": "find portainer instances in Mayotte\n", "completion": "finder~shodan search portainer country:'YT'"}
+{"prompt": "find docker hosts in Mayotte\n", "completion": "finder~shodan search docker country:'YT'"}
+{"prompt": "find cameras in Mayotte\n", "completion": "finder~shodan search cameras country:'YT'"}
+{"prompt": "find routers in Mayotte\n", "completion": "finder~shodan search routers country:'YT'"}
+{"prompt": "find apache servers in South Africa\n", "completion": "finder~shodan search apache country:'ZA'"}
+{"prompt": "find memcached servers in South Africa\n", "completion": "finder~shodan search memcached country:'ZA'"}
+{"prompt": "find portainer instances in South Africa\n", "completion": "finder~shodan search portainer country:'ZA'"}
+{"prompt": "find docker hosts in South Africa\n", "completion": "finder~shodan search docker country:'ZA'"}
+{"prompt": "find cameras in South Africa\n", "completion": "finder~shodan search cameras country:'ZA'"}
+{"prompt": "find routers in South Africa\n", "completion": "finder~shodan search routers country:'ZA'"}
+{"prompt": "find apache servers in Zaire\n", "completion": "finder~shodan search apache country:'ZR'"}
+{"prompt": "find memcached servers in Zaire\n", "completion": "finder~shodan search memcached country:'ZR'"}
+{"prompt": "find portainer instances in Zaire\n", "completion": "finder~shodan search portainer country:'ZR'"}
+{"prompt": "find docker hosts in Zaire\n", "completion": "finder~shodan search docker country:'ZR'"}
+{"prompt": "find cameras in Zaire\n", "completion": "finder~shodan search cameras country:'ZR'"}
+{"prompt": "find routers in Zaire\n", "completion": "finder~shodan search routers country:'ZR'"}
+{"prompt": "find apache servers in United Arab Emirates\n", "completion": "finder~shodan search apache country:'AE'"}
+{"prompt": "find memcached servers in United Arab Emirates\n", "completion": "finder~shodan search memcached country:'AE'"}
+{"prompt": "find portainer instances in United Arab Emirates\n", "completion": "finder~shodan search portainer country:'AE'"}
+{"prompt": "find docker hosts in United Arab Emirates\n", "completion": "finder~shodan search docker country:'AE'"}
+{"prompt": "find cameras in United Arab Emirates\n", "completion": "finder~shodan search cameras country:'AE'"}
+{"prompt": "find routers in United Arab Emirates\n", "completion": "finder~shodan search routers country:'AE'"}
+{"prompt": "find apache servers in Antigua and Barbuda\n", "completion": "finder~shodan search apache country:'AG'"}
+{"prompt": "find memcached servers in Antigua and Barbuda\n", "completion": "finder~shodan search memcached country:'AG'"}
+{"prompt": "find portainer instances in Antigua and Barbuda\n", "completion": "finder~shodan search portainer country:'AG'"}
+{"prompt": "find docker hosts in Antigua and Barbuda\n", "completion": "finder~shodan search docker country:'AG'"}
+{"prompt": "find cameras in Antigua and Barbuda\n", "completion": "finder~shodan search cameras country:'AG'"}
+{"prompt": "find routers in Antigua and Barbuda\n", "completion": "finder~shodan search routers country:'AG'"}
+{"prompt": "find apache servers in Albania\n", "completion": "finder~shodan search apache country:'AL'"}
+{"prompt": "find memcached servers in Albania\n", "completion": "finder~shodan search memcached country:'AL'"}
+{"prompt": "find portainer instances in Albania\n", "completion": "finder~shodan search portainer country:'AL'"}
+{"prompt": "find docker hosts in Albania\n", "completion": "finder~shodan search docker country:'AL'"}
+{"prompt": "find cameras in Albania\n", "completion": "finder~shodan search cameras country:'AL'"}
+{"prompt": "find routers in Albania\n", "completion": "finder~shodan search routers country:'AL'"}
+{"prompt": "find apache servers in Netherland Antilles\n", "completion": "finder~shodan search apache country:'AN'"}
+{"prompt": "find memcached servers in Netherland Antilles\n", "completion": "finder~shodan search memcached country:'AN'"}
+{"prompt": "find portainer instances in Netherland Antilles\n", "completion": "finder~shodan search portainer country:'AN'"}
+{"prompt": "find docker hosts in Netherland Antilles\n", "completion": "finder~shodan search docker country:'AN'"}
+{"prompt": "find cameras in Netherland Antilles\n", "completion": "finder~shodan search cameras country:'AN'"}
+{"prompt": "find routers in Netherland Antilles\n", "completion": "finder~shodan search routers country:'AN'"}
+{"prompt": "find apache servers in Antarctica\n", "completion": "finder~shodan search apache country:'AQ'"}
+{"prompt": "find memcached servers in Antarctica\n", "completion": "finder~shodan search memcached country:'AQ'"}
+{"prompt": "find portainer instances in Antarctica\n", "completion": "finder~shodan search portainer country:'AQ'"}
+{"prompt": "find docker hosts in Antarctica\n", "completion": "finder~shodan search docker country:'AQ'"}
+{"prompt": "find cameras in Antarctica\n", "completion": "finder~shodan search cameras country:'AQ'"}
+{"prompt": "find routers in Antarctica\n", "completion": "finder~shodan search routers country:'AQ'"}
+{"prompt": "find apache servers in American Samoa\n", "completion": "finder~shodan search apache country:'AS'"}
+{"prompt": "find memcached servers in American Samoa\n", "completion": "finder~shodan search memcached country:'AS'"}
+{"prompt": "find portainer instances in American Samoa\n", "completion": "finder~shodan search portainer country:'AS'"}
+{"prompt": "find docker hosts in American Samoa\n", "completion": "finder~shodan search docker country:'AS'"}
+{"prompt": "find cameras in American Samoa\n", "completion": "finder~shodan search cameras country:'AS'"}
+{"prompt": "find routers in American Samoa\n", "completion": "finder~shodan search routers country:'AS'"}
+{"prompt": "find apache servers in Australia\n", "completion": "finder~shodan search apache country:'AU'"}
+{"prompt": "find memcached servers in Australia\n", "completion": "finder~shodan search memcached country:'AU'"}
+{"prompt": "find portainer instances in Australia\n", "completion": "finder~shodan search portainer country:'AU'"}
+{"prompt": "find docker hosts in Australia\n", "completion": "finder~shodan search docker country:'AU'"}
+{"prompt": "find cameras in Australia\n", "completion": "finder~shodan search cameras country:'AU'"}
+{"prompt": "find routers in Australia\n", "completion": "finder~shodan search routers country:'AU'"}
+{"prompt": "find apache servers in Azerbaijan\n", "completion": "finder~shodan search apache country:'AZ'"}
+{"prompt": "find memcached servers in Azerbaijan\n", "completion": "finder~shodan search memcached country:'AZ'"}
+{"prompt": "find portainer instances in Azerbaijan\n", "completion": "finder~shodan search portainer country:'AZ'"}
+{"prompt": "find docker hosts in Azerbaijan\n", "completion": "finder~shodan search docker country:'AZ'"}
+{"prompt": "find cameras in Azerbaijan\n", "completion": "finder~shodan search cameras country:'AZ'"}
+{"prompt": "find routers in Azerbaijan\n", "completion": "finder~shodan search routers country:'AZ'"}
+{"prompt": "find apache servers in Barbados\n", "completion": "finder~shodan search apache country:'BB'"}
+{"prompt": "find memcached servers in Barbados\n", "completion": "finder~shodan search memcached country:'BB'"}
+{"prompt": "find portainer instances in Barbados\n", "completion": "finder~shodan search portainer country:'BB'"}
+{"prompt": "find docker hosts in Barbados\n", "completion": "finder~shodan search docker country:'BB'"}
+{"prompt": "find cameras in Barbados\n", "completion": "finder~shodan search cameras country:'BB'"}
+{"prompt": "find routers in Barbados\n", "completion": "finder~shodan search routers country:'BB'"}
+{"prompt": "find apache servers in Belgium\n", "completion": "finder~shodan search apache country:'BE'"}
+{"prompt": "find memcached servers in Belgium\n", "completion": "finder~shodan search memcached country:'BE'"}
+{"prompt": "find portainer instances in Belgium\n", "completion": "finder~shodan search portainer country:'BE'"}
+{"prompt": "find docker hosts in Belgium\n", "completion": "finder~shodan search docker country:'BE'"}
+{"prompt": "find cameras in Belgium\n", "completion": "finder~shodan search cameras country:'BE'"}
+{"prompt": "find routers in Belgium\n", "completion": "finder~shodan search routers country:'BE'"}
+{"prompt": "find apache servers in Bulgaria\n", "completion": "finder~shodan search apache country:'BG'"}
+{"prompt": "find memcached servers in Bulgaria\n", "completion": "finder~shodan search memcached country:'BG'"}
+{"prompt": "find portainer instances in Bulgaria\n", "completion": "finder~shodan search portainer country:'BG'"}
+{"prompt": "find docker hosts in Bulgaria\n", "completion": "finder~shodan search docker country:'BG'"}
+{"prompt": "find cameras in Bulgaria\n", "completion": "finder~shodan search cameras country:'BG'"}
+{"prompt": "find routers in Bulgaria\n", "completion": "finder~shodan search routers country:'BG'"}
+{"prompt": "find apache servers in Burundi\n", "completion": "finder~shodan search apache country:'BI'"}
+{"prompt": "find memcached servers in Burundi\n", "completion": "finder~shodan search memcached country:'BI'"}
+{"prompt": "find portainer instances in Burundi\n", "completion": "finder~shodan search portainer country:'BI'"}
+{"prompt": "find docker hosts in Burundi\n", "completion": "finder~shodan search docker country:'BI'"}
+{"prompt": "find cameras in Burundi\n", "completion": "finder~shodan search cameras country:'BI'"}
+{"prompt": "find routers in Burundi\n", "completion": "finder~shodan search routers country:'BI'"}
+{"prompt": "find apache servers in Bermuda\n", "completion": "finder~shodan search apache country:'BM'"}
+{"prompt": "find memcached servers in Bermuda\n", "completion": "finder~shodan search memcached country:'BM'"}
+{"prompt": "find portainer instances in Bermuda\n", "completion": "finder~shodan search portainer country:'BM'"}
+{"prompt": "find docker hosts in Bermuda\n", "completion": "finder~shodan search docker country:'BM'"}
+{"prompt": "find cameras in Bermuda\n", "completion": "finder~shodan search cameras country:'BM'"}
+{"prompt": "find routers in Bermuda\n", "completion": "finder~shodan search routers country:'BM'"}
+{"prompt": "find apache servers in Bolivia\n", "completion": "finder~shodan search apache country:'BO'"}
+{"prompt": "find memcached servers in Bolivia\n", "completion": "finder~shodan search memcached country:'BO'"}
+{"prompt": "find portainer instances in Bolivia\n", "completion": "finder~shodan search portainer country:'BO'"}
+{"prompt": "find docker hosts in Bolivia\n", "completion": "finder~shodan search docker country:'BO'"}
+{"prompt": "find cameras in Bolivia\n", "completion": "finder~shodan search cameras country:'BO'"}
+{"prompt": "find routers in Bolivia\n", "completion": "finder~shodan search routers country:'BO'"}
+{"prompt": "find apache servers in Bahamas\n", "completion": "finder~shodan search apache country:'BS'"}
+{"prompt": "find memcached servers in Bahamas\n", "completion": "finder~shodan search memcached country:'BS'"}
+{"prompt": "find portainer instances in Bahamas\n", "completion": "finder~shodan search portainer country:'BS'"}
+{"prompt": "find docker hosts in Bahamas\n", "completion": "finder~shodan search docker country:'BS'"}
+{"prompt": "find cameras in Bahamas\n", "completion": "finder~shodan search cameras country:'BS'"}
+{"prompt": "find routers in Bahamas\n", "completion": "finder~shodan search routers country:'BS'"}
+{"prompt": "find apache servers in Bouvet Island\n", "completion": "finder~shodan search apache country:'BV'"}
+{"prompt": "find memcached servers in Bouvet Island\n", "completion": "finder~shodan search memcached country:'BV'"}
+{"prompt": "find portainer instances in Bouvet Island\n", "completion": "finder~shodan search portainer country:'BV'"}
+{"prompt": "find docker hosts in Bouvet Island\n", "completion": "finder~shodan search docker country:'BV'"}
+{"prompt": "find cameras in Bouvet Island\n", "completion": "finder~shodan search cameras country:'BV'"}
+{"prompt": "find routers in Bouvet Island\n", "completion": "finder~shodan search routers country:'BV'"}
+{"prompt": "find apache servers in Belarus\n", "completion": "finder~shodan search apache country:'BY'"}
+{"prompt": "find memcached servers in Belarus\n", "completion": "finder~shodan search memcached country:'BY'"}
+{"prompt": "find portainer instances in Belarus\n", "completion": "finder~shodan search portainer country:'BY'"}
+{"prompt": "find docker hosts in Belarus\n", "completion": "finder~shodan search docker country:'BY'"}
+{"prompt": "find cameras in Belarus\n", "completion": "finder~shodan search cameras country:'BY'"}
+{"prompt": "find routers in Belarus\n", "completion": "finder~shodan search routers country:'BY'"}
+{"prompt": "find apache servers in Canada\n", "completion": "finder~shodan search apache country:'CA'"}
+{"prompt": "find memcached servers in Canada\n", "completion": "finder~shodan search memcached country:'CA'"}
+{"prompt": "find portainer instances in Canada\n", "completion": "finder~shodan search portainer country:'CA'"}
+{"prompt": "find docker hosts in Canada\n", "completion": "finder~shodan search docker country:'CA'"}
+{"prompt": "find cameras in Canada\n", "completion": "finder~shodan search cameras country:'CA'"}
+{"prompt": "find routers in Canada\n", "completion": "finder~shodan search routers country:'CA'"}
+{"prompt": "find apache servers in Central African Republic\n", "completion": "finder~shodan search apache country:'CF'"}
+{"prompt": "find memcached servers in Central African Republic\n", "completion": "finder~shodan search memcached country:'CF'"}
+{"prompt": "find portainer instances in Central African Republic\n", "completion": "finder~shodan search portainer country:'CF'"}
+{"prompt": "find docker hosts in Central African Republic\n", "completion": "finder~shodan search docker country:'CF'"}
+{"prompt": "find cameras in Central African Republic\n", "completion": "finder~shodan search cameras country:'CF'"}
+{"prompt": "find routers in Central African Republic\n", "completion": "finder~shodan search routers country:'CF'"}
+{"prompt": "find apache servers in Switzerland\n", "completion": "finder~shodan search apache country:'CH'"}
+{"prompt": "find memcached servers in Switzerland\n", "completion": "finder~shodan search memcached country:'CH'"}
+{"prompt": "find portainer instances in Switzerland\n", "completion": "finder~shodan search portainer country:'CH'"}
+{"prompt": "find docker hosts in Switzerland\n", "completion": "finder~shodan search docker country:'CH'"}
+{"prompt": "find cameras in Switzerland\n", "completion": "finder~shodan search cameras country:'CH'"}
+{"prompt": "find routers in Switzerland\n", "completion": "finder~shodan search routers country:'CH'"}
+{"prompt": "find apache servers in Cook Islands\n", "completion": "finder~shodan search apache country:'CK'"}
+{"prompt": "find memcached servers in Cook Islands\n", "completion": "finder~shodan search memcached country:'CK'"}
+{"prompt": "find portainer instances in Cook Islands\n", "completion": "finder~shodan search portainer country:'CK'"}
+{"prompt": "find docker hosts in Cook Islands\n", "completion": "finder~shodan search docker country:'CK'"}
+{"prompt": "find cameras in Cook Islands\n", "completion": "finder~shodan search cameras country:'CK'"}
+{"prompt": "find routers in Cook Islands\n", "completion": "finder~shodan search routers country:'CK'"}
+{"prompt": "find apache servers in Cameroon\n", "completion": "finder~shodan search apache country:'CM'"}
+{"prompt": "find memcached servers in Cameroon\n", "completion": "finder~shodan search memcached country:'CM'"}
+{"prompt": "find portainer instances in Cameroon\n", "completion": "finder~shodan search portainer country:'CM'"}
+{"prompt": "find docker hosts in Cameroon\n", "completion": "finder~shodan search docker country:'CM'"}
+{"prompt": "find cameras in Cameroon\n", "completion": "finder~shodan search cameras country:'CM'"}
+{"prompt": "find routers in Cameroon\n", "completion": "finder~shodan search routers country:'CM'"}
+{"prompt": "find apache servers in Colombia\n", "completion": "finder~shodan search apache country:'CO'"}
+{"prompt": "find memcached servers in Colombia\n", "completion": "finder~shodan search memcached country:'CO'"}
+{"prompt": "find portainer instances in Colombia\n", "completion": "finder~shodan search portainer country:'CO'"}
+{"prompt": "find docker hosts in Colombia\n", "completion": "finder~shodan search docker country:'CO'"}
+{"prompt": "find cameras in Colombia\n", "completion": "finder~shodan search cameras country:'CO'"}
+{"prompt": "find routers in Colombia\n", "completion": "finder~shodan search routers country:'CO'"}
+{"prompt": "find apache servers in Czechoslovakia (obsolete)\n", "completion": "finder~shodan search apache country:'CS'"}
+{"prompt": "find memcached servers in Czechoslovakia (obsolete)\n", "completion": "finder~shodan search memcached country:'CS'"}
+{"prompt": "find portainer instances in Czechoslovakia (obsolete)\n", "completion": "finder~shodan search portainer country:'CS'"}
+{"prompt": "find docker hosts in Czechoslovakia (obsolete)\n", "completion": "finder~shodan search docker country:'CS'"}
+{"prompt": "find cameras in Czechoslovakia (obsolete)\n", "completion": "finder~shodan search cameras country:'CS'"}
+{"prompt": "find routers in Czechoslovakia (obsolete)\n", "completion": "finder~shodan search routers country:'CS'"}
+{"prompt": "find apache servers in Cape Verde\n", "completion": "finder~shodan search apache country:'CV'"}
+{"prompt": "find memcached servers in Cape Verde\n", "completion": "finder~shodan search memcached country:'CV'"}
+{"prompt": "find portainer instances in Cape Verde\n", "completion": "finder~shodan search portainer country:'CV'"}
+{"prompt": "find docker hosts in Cape Verde\n", "completion": "finder~shodan search docker country:'CV'"}
+{"prompt": "find cameras in Cape Verde\n", "completion": "finder~shodan search cameras country:'CV'"}
+{"prompt": "find routers in Cape Verde\n", "completion": "finder~shodan search routers country:'CV'"}
+{"prompt": "find apache servers in Cyprus\n", "completion": "finder~shodan search apache country:'CY'"}
+{"prompt": "find memcached servers in Cyprus\n", "completion": "finder~shodan search memcached country:'CY'"}
+{"prompt": "find portainer instances in Cyprus\n", "completion": "finder~shodan search portainer country:'CY'"}
+{"prompt": "find docker hosts in Cyprus\n", "completion": "finder~shodan search docker country:'CY'"}
+{"prompt": "find cameras in Cyprus\n", "completion": "finder~shodan search cameras country:'CY'"}
+{"prompt": "find routers in Cyprus\n", "completion": "finder~shodan search routers country:'CY'"}
+{"prompt": "find apache servers in Germany\n", "completion": "finder~shodan search apache country:'DE'"}
+{"prompt": "find memcached servers in Germany\n", "completion": "finder~shodan search memcached country:'DE'"}
+{"prompt": "find portainer instances in Germany\n", "completion": "finder~shodan search portainer country:'DE'"}
+{"prompt": "find docker hosts in Germany\n", "completion": "finder~shodan search docker country:'DE'"}
+{"prompt": "find cameras in Germany\n", "completion": "finder~shodan search cameras country:'DE'"}
+{"prompt": "find routers in Germany\n", "completion": "finder~shodan search routers country:'DE'"}
+{"prompt": "find apache servers in Denmark\n", "completion": "finder~shodan search apache country:'DK'"}
+{"prompt": "find memcached servers in Denmark\n", "completion": "finder~shodan search memcached country:'DK'"}
+{"prompt": "find portainer instances in Denmark\n", "completion": "finder~shodan search portainer country:'DK'"}
+{"prompt": "find docker hosts in Denmark\n", "completion": "finder~shodan search docker country:'DK'"}
+{"prompt": "find cameras in Denmark\n", "completion": "finder~shodan search cameras country:'DK'"}
+{"prompt": "find routers in Denmark\n", "completion": "finder~shodan search routers country:'DK'"}
+{"prompt": "find apache servers in Dominican Republic\n", "completion": "finder~shodan search apache country:'DO'"}
+{"prompt": "find memcached servers in Dominican Republic\n", "completion": "finder~shodan search memcached country:'DO'"}
+{"prompt": "find portainer instances in Dominican Republic\n", "completion": "finder~shodan search portainer country:'DO'"}
+{"prompt": "find docker hosts in Dominican Republic\n", "completion": "finder~shodan search docker country:'DO'"}
+{"prompt": "find cameras in Dominican Republic\n", "completion": "finder~shodan search cameras country:'DO'"}
+{"prompt": "find routers in Dominican Republic\n", "completion": "finder~shodan search routers country:'DO'"}
+{"prompt": "find apache servers in Ecuador\n", "completion": "finder~shodan search apache country:'EC'"}
+{"prompt": "find memcached servers in Ecuador\n", "completion": "finder~shodan search memcached country:'EC'"}
+{"prompt": "find portainer instances in Ecuador\n", "completion": "finder~shodan search portainer country:'EC'"}
+{"prompt": "find docker hosts in Ecuador\n", "completion": "finder~shodan search docker country:'EC'"}
+{"prompt": "find cameras in Ecuador\n", "completion": "finder~shodan search cameras country:'EC'"}
+{"prompt": "find routers in Ecuador\n", "completion": "finder~shodan search routers country:'EC'"}
+{"prompt": "find apache servers in Egypt\n", "completion": "finder~shodan search apache country:'EG'"}
+{"prompt": "find memcached servers in Egypt\n", "completion": "finder~shodan search memcached country:'EG'"}
+{"prompt": "find portainer instances in Egypt\n", "completion": "finder~shodan search portainer country:'EG'"}
+{"prompt": "find docker hosts in Egypt\n", "completion": "finder~shodan search docker country:'EG'"}
+{"prompt": "find cameras in Egypt\n", "completion": "finder~shodan search cameras country:'EG'"}
+{"prompt": "find routers in Egypt\n", "completion": "finder~shodan search routers country:'EG'"}
+{"prompt": "find apache servers in Eritrea\n", "completion": "finder~shodan search apache country:'ER'"}
+{"prompt": "find memcached servers in Eritrea\n", "completion": "finder~shodan search memcached country:'ER'"}
+{"prompt": "find portainer instances in Eritrea\n", "completion": "finder~shodan search portainer country:'ER'"}
+{"prompt": "find docker hosts in Eritrea\n", "completion": "finder~shodan search docker country:'ER'"}
+{"prompt": "find cameras in Eritrea\n", "completion": "finder~shodan search cameras country:'ER'"}
+{"prompt": "find routers in Eritrea\n", "completion": "finder~shodan search routers country:'ER'"}
+{"prompt": "find apache servers in Ethiopia\n", "completion": "finder~shodan search apache country:'ET'"}
+{"prompt": "find memcached servers in Ethiopia\n", "completion": "finder~shodan search memcached country:'ET'"}
+{"prompt": "find portainer instances in Ethiopia\n", "completion": "finder~shodan search portainer country:'ET'"}
+{"prompt": "find docker hosts in Ethiopia\n", "completion": "finder~shodan search docker country:'ET'"}
+{"prompt": "find cameras in Ethiopia\n", "completion": "finder~shodan search cameras country:'ET'"}
+{"prompt": "find routers in Ethiopia\n", "completion": "finder~shodan search routers country:'ET'"}
+{"prompt": "find apache servers in Fiji\n", "completion": "finder~shodan search apache country:'FJ'"}
+{"prompt": "find memcached servers in Fiji\n", "completion": "finder~shodan search memcached country:'FJ'"}
+{"prompt": "find portainer instances in Fiji\n", "completion": "finder~shodan search portainer country:'FJ'"}
+{"prompt": "find docker hosts in Fiji\n", "completion": "finder~shodan search docker country:'FJ'"}
+{"prompt": "find cameras in Fiji\n", "completion": "finder~shodan search cameras country:'FJ'"}
+{"prompt": "find routers in Fiji\n", "completion": "finder~shodan search routers country:'FJ'"}
+{"prompt": "find apache servers in Micronesia\n", "completion": "finder~shodan search apache country:'FM'"}
+{"prompt": "find memcached servers in Micronesia\n", "completion": "finder~shodan search memcached country:'FM'"}
+{"prompt": "find portainer instances in Micronesia\n", "completion": "finder~shodan search portainer country:'FM'"}
+{"prompt": "find docker hosts in Micronesia\n", "completion": "finder~shodan search docker country:'FM'"}
+{"prompt": "find cameras in Micronesia\n", "completion": "finder~shodan search cameras country:'FM'"}
+{"prompt": "find routers in Micronesia\n", "completion": "finder~shodan search routers country:'FM'"}
+{"prompt": "find apache servers in France\n", "completion": "finder~shodan search apache country:'FR'"}
+{"prompt": "find memcached servers in France\n", "completion": "finder~shodan search memcached country:'FR'"}
+{"prompt": "find portainer instances in France\n", "completion": "finder~shodan search portainer country:'FR'"}
+{"prompt": "find docker hosts in France\n", "completion": "finder~shodan search docker country:'FR'"}
+{"prompt": "find cameras in France\n", "completion": "finder~shodan search cameras country:'FR'"}
+{"prompt": "find routers in France\n", "completion": "finder~shodan search routers country:'FR'"}
+{"prompt": "find apache servers in Gabon\n", "completion": "finder~shodan search apache country:'GA'"}
+{"prompt": "find memcached servers in Gabon\n", "completion": "finder~shodan search memcached country:'GA'"}
+{"prompt": "find portainer instances in Gabon\n", "completion": "finder~shodan search portainer country:'GA'"}
+{"prompt": "find docker hosts in Gabon\n", "completion": "finder~shodan search docker country:'GA'"}
+{"prompt": "find cameras in Gabon\n", "completion": "finder~shodan search cameras country:'GA'"}
+{"prompt": "find routers in Gabon\n", "completion": "finder~shodan search routers country:'GA'"}
+{"prompt": "find apache servers in Grenada\n", "completion": "finder~shodan search apache country:'GD'"}
+{"prompt": "find memcached servers in Grenada\n", "completion": "finder~shodan search memcached country:'GD'"}
+{"prompt": "find portainer instances in Grenada\n", "completion": "finder~shodan search portainer country:'GD'"}
+{"prompt": "find docker hosts in Grenada\n", "completion": "finder~shodan search docker country:'GD'"}
+{"prompt": "find cameras in Grenada\n", "completion": "finder~shodan search cameras country:'GD'"}
+{"prompt": "find routers in Grenada\n", "completion": "finder~shodan search routers country:'GD'"}
+{"prompt": "find apache servers in Guyana (Fr.)\n", "completion": "finder~shodan search apache country:'GF'"}
+{"prompt": "find memcached servers in Guyana (Fr.)\n", "completion": "finder~shodan search memcached country:'GF'"}
+{"prompt": "find portainer instances in Guyana (Fr.)\n", "completion": "finder~shodan search portainer country:'GF'"}
+{"prompt": "find docker hosts in Guyana (Fr.)\n", "completion": "finder~shodan search docker country:'GF'"}
+{"prompt": "find cameras in Guyana (Fr.)\n", "completion": "finder~shodan search cameras country:'GF'"}
+{"prompt": "find routers in Guyana (Fr.)\n", "completion": "finder~shodan search routers country:'GF'"}
+{"prompt": "find apache servers in Gibraltar\n", "completion": "finder~shodan search apache country:'GI'"}
+{"prompt": "find memcached servers in Gibraltar\n", "completion": "finder~shodan search memcached country:'GI'"}
+{"prompt": "find portainer instances in Gibraltar\n", "completion": "finder~shodan search portainer country:'GI'"}
+{"prompt": "find docker hosts in Gibraltar\n", "completion": "finder~shodan search docker country:'GI'"}
+{"prompt": "find cameras in Gibraltar\n", "completion": "finder~shodan search cameras country:'GI'"}
+{"prompt": "find routers in Gibraltar\n", "completion": "finder~shodan search routers country:'GI'"}
+{"prompt": "find apache servers in Gambia\n", "completion": "finder~shodan search apache country:'GM'"}
+{"prompt": "find memcached servers in Gambia\n", "completion": "finder~shodan search memcached country:'GM'"}
+{"prompt": "find portainer instances in Gambia\n", "completion": "finder~shodan search portainer country:'GM'"}
+{"prompt": "find docker hosts in Gambia\n", "completion": "finder~shodan search docker country:'GM'"}
+{"prompt": "find cameras in Gambia\n", "completion": "finder~shodan search cameras country:'GM'"}
+{"prompt": "find routers in Gambia\n", "completion": "finder~shodan search routers country:'GM'"}
+{"prompt": "find apache servers in Guadeloupe (Fr.)\n", "completion": "finder~shodan search apache country:'GP'"}
+{"prompt": "find memcached servers in Guadeloupe (Fr.)\n", "completion": "finder~shodan search memcached country:'GP'"}
+{"prompt": "find portainer instances in Guadeloupe (Fr.)\n", "completion": "finder~shodan search portainer country:'GP'"}
+{"prompt": "find docker hosts in Guadeloupe (Fr.)\n", "completion": "finder~shodan search docker country:'GP'"}
+{"prompt": "find cameras in Guadeloupe (Fr.)\n", "completion": "finder~shodan search cameras country:'GP'"}
+{"prompt": "find routers in Guadeloupe (Fr.)\n", "completion": "finder~shodan search routers country:'GP'"}
+{"prompt": "find apache servers in Greece\n", "completion": "finder~shodan search apache country:'GR'"}
+{"prompt": "find memcached servers in Greece\n", "completion": "finder~shodan search memcached country:'GR'"}
+{"prompt": "find portainer instances in Greece\n", "completion": "finder~shodan search portainer country:'GR'"}
+{"prompt": "find docker hosts in Greece\n", "completion": "finder~shodan search docker country:'GR'"}
+{"prompt": "find cameras in Greece\n", "completion": "finder~shodan search cameras country:'GR'"}
+{"prompt": "find routers in Greece\n", "completion": "finder~shodan search routers country:'GR'"}
+{"prompt": "find apache servers in Guatemala\n", "completion": "finder~shodan search apache country:'GT'"}
+{"prompt": "find memcached servers in Guatemala\n", "completion": "finder~shodan search memcached country:'GT'"}
+{"prompt": "find portainer instances in Guatemala\n", "completion": "finder~shodan search portainer country:'GT'"}
+{"prompt": "find docker hosts in Guatemala\n", "completion": "finder~shodan search docker country:'GT'"}
+{"prompt": "find cameras in Guatemala\n", "completion": "finder~shodan search cameras country:'GT'"}
+{"prompt": "find routers in Guatemala\n", "completion": "finder~shodan search routers country:'GT'"}
+{"prompt": "find apache servers in Guinea Bissau\n", "completion": "finder~shodan search apache country:'GW'"}
+{"prompt": "find memcached servers in Guinea Bissau\n", "completion": "finder~shodan search memcached country:'GW'"}
+{"prompt": "find portainer instances in Guinea Bissau\n", "completion": "finder~shodan search portainer country:'GW'"}
+{"prompt": "find docker hosts in Guinea Bissau\n", "completion": "finder~shodan search docker country:'GW'"}
+{"prompt": "find cameras in Guinea Bissau\n", "completion": "finder~shodan search cameras country:'GW'"}
+{"prompt": "find routers in Guinea Bissau\n", "completion": "finder~shodan search routers country:'GW'"}
+{"prompt": "find apache servers in Hong Kong\n", "completion": "finder~shodan search apache country:'HK'"}
+{"prompt": "find memcached servers in Hong Kong\n", "completion": "finder~shodan search memcached country:'HK'"}
+{"prompt": "find portainer instances in Hong Kong\n", "completion": "finder~shodan search portainer country:'HK'"}
+{"prompt": "find docker hosts in Hong Kong\n", "completion": "finder~shodan search docker country:'HK'"}
+{"prompt": "find cameras in Hong Kong\n", "completion": "finder~shodan search cameras country:'HK'"}
+{"prompt": "find routers in Hong Kong\n", "completion": "finder~shodan search routers country:'HK'"}
+{"prompt": "find apache servers in Honduras\n", "completion": "finder~shodan search apache country:'HN'"}
+{"prompt": "find memcached servers in Honduras\n", "completion": "finder~shodan search memcached country:'HN'"}
+{"prompt": "find portainer instances in Honduras\n", "completion": "finder~shodan search portainer country:'HN'"}
+{"prompt": "find docker hosts in Honduras\n", "completion": "finder~shodan search docker country:'HN'"}
+{"prompt": "find cameras in Honduras\n", "completion": "finder~shodan search cameras country:'HN'"}
+{"prompt": "find routers in Honduras\n", "completion": "finder~shodan search routers country:'HN'"}
+{"prompt": "find apache servers in Haiti\n", "completion": "finder~shodan search apache country:'HT'"}
+{"prompt": "find memcached servers in Haiti\n", "completion": "finder~shodan search memcached country:'HT'"}
+{"prompt": "find portainer instances in Haiti\n", "completion": "finder~shodan search portainer country:'HT'"}
+{"prompt": "find docker hosts in Haiti\n", "completion": "finder~shodan search docker country:'HT'"}
+{"prompt": "find cameras in Haiti\n", "completion": "finder~shodan search cameras country:'HT'"}
+{"prompt": "find routers in Haiti\n", "completion": "finder~shodan search routers country:'HT'"}
+{"prompt": "find apache servers in Indonesia\n", "completion": "finder~shodan search apache country:'ID'"}
+{"prompt": "find memcached servers in Indonesia\n", "completion": "finder~shodan search memcached country:'ID'"}
+{"prompt": "find portainer instances in Indonesia\n", "completion": "finder~shodan search portainer country:'ID'"}
+{"prompt": "find docker hosts in Indonesia\n", "completion": "finder~shodan search docker country:'ID'"}
+{"prompt": "find cameras in Indonesia\n", "completion": "finder~shodan search cameras country:'ID'"}
+{"prompt": "find routers in Indonesia\n", "completion": "finder~shodan search routers country:'ID'"}
+{"prompt": "find apache servers in Israel\n", "completion": "finder~shodan search apache country:'IL'"}
+{"prompt": "find memcached servers in Israel\n", "completion": "finder~shodan search memcached country:'IL'"}
+{"prompt": "find portainer instances in Israel\n", "completion": "finder~shodan search portainer country:'IL'"}
+{"prompt": "find docker hosts in Israel\n", "completion": "finder~shodan search docker country:'IL'"}
+{"prompt": "find cameras in Israel\n", "completion": "finder~shodan search cameras country:'IL'"}
+{"prompt": "find routers in Israel\n", "completion": "finder~shodan search routers country:'IL'"}
+{"prompt": "find apache servers in British Indian Ocean Terr.\n", "completion": "finder~shodan search apache country:'IO'"}
+{"prompt": "find memcached servers in British Indian Ocean Terr.\n", "completion": "finder~shodan search memcached country:'IO'"}
+{"prompt": "find portainer instances in British Indian Ocean Terr.\n", "completion": "finder~shodan search portainer country:'IO'"}
+{"prompt": "find docker hosts in British Indian Ocean Terr.\n", "completion": "finder~shodan search docker country:'IO'"}
+{"prompt": "find cameras in British Indian Ocean Terr.\n", "completion": "finder~shodan search cameras country:'IO'"}
+{"prompt": "find routers in British Indian Ocean Terr.\n", "completion": "finder~shodan search routers country:'IO'"}
+{"prompt": "find apache servers in Iran\n", "completion": "finder~shodan search apache country:'IR'"}
+{"prompt": "find memcached servers in Iran\n", "completion": "finder~shodan search memcached country:'IR'"}
+{"prompt": "find portainer instances in Iran\n", "completion": "finder~shodan search portainer country:'IR'"}
+{"prompt": "find docker hosts in Iran\n", "completion": "finder~shodan search docker country:'IR'"}
+{"prompt": "find cameras in Iran\n", "completion": "finder~shodan search cameras country:'IR'"}
+{"prompt": "find routers in Iran\n", "completion": "finder~shodan search routers country:'IR'"}
+{"prompt": "find apache servers in Italy\n", "completion": "finder~shodan search apache country:'IT'"}
+{"prompt": "find memcached servers in Italy\n", "completion": "finder~shodan search memcached country:'IT'"}
+{"prompt": "find portainer instances in Italy\n", "completion": "finder~shodan search portainer country:'IT'"}
+{"prompt": "find docker hosts in Italy\n", "completion": "finder~shodan search docker country:'IT'"}
+{"prompt": "find cameras in Italy\n", "completion": "finder~shodan search cameras country:'IT'"}
+{"prompt": "find routers in Italy\n", "completion": "finder~shodan search routers country:'IT'"}
+{"prompt": "find apache servers in Jordan\n", "completion": "finder~shodan search apache country:'JO'"}
+{"prompt": "find memcached servers in Jordan\n", "completion": "finder~shodan search memcached country:'JO'"}
+{"prompt": "find portainer instances in Jordan\n", "completion": "finder~shodan search portainer country:'JO'"}
+{"prompt": "find docker hosts in Jordan\n", "completion": "finder~shodan search docker country:'JO'"}
+{"prompt": "find cameras in Jordan\n", "completion": "finder~shodan search cameras country:'JO'"}
+{"prompt": "find routers in Jordan\n", "completion": "finder~shodan search routers country:'JO'"}
+{"prompt": "find apache servers in Kenya\n", "completion": "finder~shodan search apache country:'KE'"}
+{"prompt": "find memcached servers in Kenya\n", "completion": "finder~shodan search memcached country:'KE'"}
+{"prompt": "find portainer instances in Kenya\n", "completion": "finder~shodan search portainer country:'KE'"}
+{"prompt": "find docker hosts in Kenya\n", "completion": "finder~shodan search docker country:'KE'"}
+{"prompt": "find cameras in Kenya\n", "completion": "finder~shodan search cameras country:'KE'"}
+{"prompt": "find routers in Kenya\n", "completion": "finder~shodan search routers country:'KE'"}
+{"prompt": "find apache servers in Cambodia\n", "completion": "finder~shodan search apache country:'KH'"}
+{"prompt": "find memcached servers in Cambodia\n", "completion": "finder~shodan search memcached country:'KH'"}
+{"prompt": "find portainer instances in Cambodia\n", "completion": "finder~shodan search portainer country:'KH'"}
+{"prompt": "find docker hosts in Cambodia\n", "completion": "finder~shodan search docker country:'KH'"}
+{"prompt": "find cameras in Cambodia\n", "completion": "finder~shodan search cameras country:'KH'"}
+{"prompt": "find routers in Cambodia\n", "completion": "finder~shodan search routers country:'KH'"}
+{"prompt": "find apache servers in Comoros\n", "completion": "finder~shodan search apache country:'KM'"}
+{"prompt": "find memcached servers in Comoros\n", "completion": "finder~shodan search memcached country:'KM'"}
+{"prompt": "find portainer instances in Comoros\n", "completion": "finder~shodan search portainer country:'KM'"}
+{"prompt": "find docker hosts in Comoros\n", "completion": "finder~shodan search docker country:'KM'"}
+{"prompt": "find cameras in Comoros\n", "completion": "finder~shodan search cameras country:'KM'"}
+{"prompt": "find routers in Comoros\n", "completion": "finder~shodan search routers country:'KM'"}
+{"prompt": "find apache servers in Korea (North)\n", "completion": "finder~shodan search apache country:'KP'"}
+{"prompt": "find memcached servers in Korea (North)\n", "completion": "finder~shodan search memcached country:'KP'"}
+{"prompt": "find portainer instances in Korea (North)\n", "completion": "finder~shodan search portainer country:'KP'"}
+{"prompt": "find docker hosts in Korea (North)\n", "completion": "finder~shodan search docker country:'KP'"}
+{"prompt": "find cameras in Korea (North)\n", "completion": "finder~shodan search cameras country:'KP'"}
+{"prompt": "find routers in Korea (North)\n", "completion": "finder~shodan search routers country:'KP'"}
+{"prompt": "find apache servers in Kuwait\n", "completion": "finder~shodan search apache country:'KW'"}
+{"prompt": "find memcached servers in Kuwait\n", "completion": "finder~shodan search memcached country:'KW'"}
+{"prompt": "find portainer instances in Kuwait\n", "completion": "finder~shodan search portainer country:'KW'"}
+{"prompt": "find docker hosts in Kuwait\n", "completion": "finder~shodan search docker country:'KW'"}
+{"prompt": "find cameras in Kuwait\n", "completion": "finder~shodan search cameras country:'KW'"}
+{"prompt": "find routers in Kuwait\n", "completion": "finder~shodan search routers country:'KW'"}
+{"prompt": "find apache servers in Kazachstan\n", "completion": "finder~shodan search apache country:'KZ'"}
+{"prompt": "find memcached servers in Kazachstan\n", "completion": "finder~shodan search memcached country:'KZ'"}
+{"prompt": "find portainer instances in Kazachstan\n", "completion": "finder~shodan search portainer country:'KZ'"}
+{"prompt": "find docker hosts in Kazachstan\n", "completion": "finder~shodan search docker country:'KZ'"}
+{"prompt": "find cameras in Kazachstan\n", "completion": "finder~shodan search cameras country:'KZ'"}
+{"prompt": "find routers in Kazachstan\n", "completion": "finder~shodan search routers country:'KZ'"}
+{"prompt": "find apache servers in Lebanon\n", "completion": "finder~shodan search apache country:'LB'"}
+{"prompt": "find memcached servers in Lebanon\n", "completion": "finder~shodan search memcached country:'LB'"}
+{"prompt": "find portainer instances in Lebanon\n", "completion": "finder~shodan search portainer country:'LB'"}
+{"prompt": "find docker hosts in Lebanon\n", "completion": "finder~shodan search docker country:'LB'"}
+{"prompt": "find cameras in Lebanon\n", "completion": "finder~shodan search cameras country:'LB'"}
+{"prompt": "find routers in Lebanon\n", "completion": "finder~shodan search routers country:'LB'"}
+{"prompt": "find apache servers in Liechtenstein\n", "completion": "finder~shodan search apache country:'LI'"}
+{"prompt": "find memcached servers in Liechtenstein\n", "completion": "finder~shodan search memcached country:'LI'"}
+{"prompt": "find portainer instances in Liechtenstein\n", "completion": "finder~shodan search portainer country:'LI'"}
+{"prompt": "find docker hosts in Liechtenstein\n", "completion": "finder~shodan search docker country:'LI'"}
+{"prompt": "find cameras in Liechtenstein\n", "completion": "finder~shodan search cameras country:'LI'"}
+{"prompt": "find routers in Liechtenstein\n", "completion": "finder~shodan search routers country:'LI'"}
+{"prompt": "find apache servers in Liberia\n", "completion": "finder~shodan search apache country:'LR'"}
+{"prompt": "find memcached servers in Liberia\n", "completion": "finder~shodan search memcached country:'LR'"}
+{"prompt": "find portainer instances in Liberia\n", "completion": "finder~shodan search portainer country:'LR'"}
+{"prompt": "find docker hosts in Liberia\n", "completion": "finder~shodan search docker country:'LR'"}
+{"prompt": "find cameras in Liberia\n", "completion": "finder~shodan search cameras country:'LR'"}
+{"prompt": "find routers in Liberia\n", "completion": "finder~shodan search routers country:'LR'"}
+{"prompt": "find apache servers in Lithuania\n", "completion": "finder~shodan search apache country:'LT'"}
+{"prompt": "find memcached servers in Lithuania\n", "completion": "finder~shodan search memcached country:'LT'"}
+{"prompt": "find portainer instances in Lithuania\n", "completion": "finder~shodan search portainer country:'LT'"}
+{"prompt": "find docker hosts in Lithuania\n", "completion": "finder~shodan search docker country:'LT'"}
+{"prompt": "find cameras in Lithuania\n", "completion": "finder~shodan search cameras country:'LT'"}
+{"prompt": "find routers in Lithuania\n", "completion": "finder~shodan search routers country:'LT'"}
+{"prompt": "find apache servers in Latvia\n", "completion": "finder~shodan search apache country:'LV'"}
+{"prompt": "find memcached servers in Latvia\n", "completion": "finder~shodan search memcached country:'LV'"}
+{"prompt": "find portainer instances in Latvia\n", "completion": "finder~shodan search portainer country:'LV'"}
+{"prompt": "find docker hosts in Latvia\n", "completion": "finder~shodan search docker country:'LV'"}
+{"prompt": "find cameras in Latvia\n", "completion": "finder~shodan search cameras country:'LV'"}
+{"prompt": "find routers in Latvia\n", "completion": "finder~shodan search routers country:'LV'"}
+{"prompt": "find apache servers in Morocco\n", "completion": "finder~shodan search apache country:'MA'"}
+{"prompt": "find memcached servers in Morocco\n", "completion": "finder~shodan search memcached country:'MA'"}
+{"prompt": "find portainer instances in Morocco\n", "completion": "finder~shodan search portainer country:'MA'"}
+{"prompt": "find docker hosts in Morocco\n", "completion": "finder~shodan search docker country:'MA'"}
+{"prompt": "find cameras in Morocco\n", "completion": "finder~shodan search cameras country:'MA'"}
+{"prompt": "find routers in Morocco\n", "completion": "finder~shodan search routers country:'MA'"}
+{"prompt": "find apache servers in Moldova\n", "completion": "finder~shodan search apache country:'MD'"}
+{"prompt": "find memcached servers in Moldova\n", "completion": "finder~shodan search memcached country:'MD'"}
+{"prompt": "find portainer instances in Moldova\n", "completion": "finder~shodan search portainer country:'MD'"}
+{"prompt": "find docker hosts in Moldova\n", "completion": "finder~shodan search docker country:'MD'"}
+{"prompt": "find cameras in Moldova\n", "completion": "finder~shodan search cameras country:'MD'"}
+{"prompt": "find routers in Moldova\n", "completion": "finder~shodan search routers country:'MD'"}
+{"prompt": "find apache servers in Marshall Islands\n", "completion": "finder~shodan search apache country:'MH'"}
+{"prompt": "find memcached servers in Marshall Islands\n", "completion": "finder~shodan search memcached country:'MH'"}
+{"prompt": "find portainer instances in Marshall Islands\n", "completion": "finder~shodan search portainer country:'MH'"}
+{"prompt": "find docker hosts in Marshall Islands\n", "completion": "finder~shodan search docker country:'MH'"}
+{"prompt": "find cameras in Marshall Islands\n", "completion": "finder~shodan search cameras country:'MH'"}
+{"prompt": "find routers in Marshall Islands\n", "completion": "finder~shodan search routers country:'MH'"}
+{"prompt": "find apache servers in Mali\n", "completion": "finder~shodan search apache country:'ML'"}
+{"prompt": "find memcached servers in Mali\n", "completion": "finder~shodan search memcached country:'ML'"}
+{"prompt": "find portainer instances in Mali\n", "completion": "finder~shodan search portainer country:'ML'"}
+{"prompt": "find docker hosts in Mali\n", "completion": "finder~shodan search docker country:'ML'"}
+{"prompt": "find cameras in Mali\n", "completion": "finder~shodan search cameras country:'ML'"}
+{"prompt": "find routers in Mali\n", "completion": "finder~shodan search routers country:'ML'"}
+{"prompt": "find apache servers in Mongolia\n", "completion": "finder~shodan search apache country:'MN'"}
+{"prompt": "find memcached servers in Mongolia\n", "completion": "finder~shodan search memcached country:'MN'"}
+{"prompt": "find portainer instances in Mongolia\n", "completion": "finder~shodan search portainer country:'MN'"}
+{"prompt": "find docker hosts in Mongolia\n", "completion": "finder~shodan search docker country:'MN'"}
+{"prompt": "find cameras in Mongolia\n", "completion": "finder~shodan search cameras country:'MN'"}
+{"prompt": "find routers in Mongolia\n", "completion": "finder~shodan search routers country:'MN'"}
+{"prompt": "find apache servers in Northern Mariana Islands\n", "completion": "finder~shodan search apache country:'MP'"}
+{"prompt": "find memcached servers in Northern Mariana Islands\n", "completion": "finder~shodan search memcached country:'MP'"}
+{"prompt": "find portainer instances in Northern Mariana Islands\n", "completion": "finder~shodan search portainer country:'MP'"}
+{"prompt": "find docker hosts in Northern Mariana Islands\n", "completion": "finder~shodan search docker country:'MP'"}
+{"prompt": "find cameras in Northern Mariana Islands\n", "completion": "finder~shodan search cameras country:'MP'"}
+{"prompt": "find routers in Northern Mariana Islands\n", "completion": "finder~shodan search routers country:'MP'"}
+{"prompt": "find apache servers in Mauritania\n", "completion": "finder~shodan search apache country:'MR'"}
+{"prompt": "find memcached servers in Mauritania\n", "completion": "finder~shodan search memcached country:'MR'"}
+{"prompt": "find portainer instances in Mauritania\n", "completion": "finder~shodan search portainer country:'MR'"}
+{"prompt": "find docker hosts in Mauritania\n", "completion": "finder~shodan search docker country:'MR'"}
+{"prompt": "find cameras in Mauritania\n", "completion": "finder~shodan search cameras country:'MR'"}
+{"prompt": "find routers in Mauritania\n", "completion": "finder~shodan search routers country:'MR'"}
+{"prompt": "find apache servers in Malta\n", "completion": "finder~shodan search apache country:'MT'"}
+{"prompt": "find memcached servers in Malta\n", "completion": "finder~shodan search memcached country:'MT'"}
+{"prompt": "find portainer instances in Malta\n", "completion": "finder~shodan search portainer country:'MT'"}
+{"prompt": "find docker hosts in Malta\n", "completion": "finder~shodan search docker country:'MT'"}
+{"prompt": "find cameras in Malta\n", "completion": "finder~shodan search cameras country:'MT'"}
+{"prompt": "find routers in Malta\n", "completion": "finder~shodan search routers country:'MT'"}
+{"prompt": "find apache servers in Maldives\n", "completion": "finder~shodan search apache country:'MV'"}
+{"prompt": "find memcached servers in Maldives\n", "completion": "finder~shodan search memcached country:'MV'"}
+{"prompt": "find portainer instances in Maldives\n", "completion": "finder~shodan search portainer country:'MV'"}
+{"prompt": "find docker hosts in Maldives\n", "completion": "finder~shodan search docker country:'MV'"}
+{"prompt": "find cameras in Maldives\n", "completion": "finder~shodan search cameras country:'MV'"}
+{"prompt": "find routers in Maldives\n", "completion": "finder~shodan search routers country:'MV'"}
+{"prompt": "find apache servers in Mexico\n", "completion": "finder~shodan search apache country:'MX'"}
+{"prompt": "find memcached servers in Mexico\n", "completion": "finder~shodan search memcached country:'MX'"}
+{"prompt": "find portainer instances in Mexico\n", "completion": "finder~shodan search portainer country:'MX'"}
+{"prompt": "find docker hosts in Mexico\n", "completion": "finder~shodan search docker country:'MX'"}
+{"prompt": "find cameras in Mexico\n", "completion": "finder~shodan search cameras country:'MX'"}
+{"prompt": "find routers in Mexico\n", "completion": "finder~shodan search routers country:'MX'"}
+{"prompt": "find apache servers in Mozambique\n", "completion": "finder~shodan search apache country:'MZ'"}
+{"prompt": "find memcached servers in Mozambique\n", "completion": "finder~shodan search memcached country:'MZ'"}
+{"prompt": "find portainer instances in Mozambique\n", "completion": "finder~shodan search portainer country:'MZ'"}
+{"prompt": "find docker hosts in Mozambique\n", "completion": "finder~shodan search docker country:'MZ'"}
+{"prompt": "find cameras in Mozambique\n", "completion": "finder~shodan search cameras country:'MZ'"}
+{"prompt": "find routers in Mozambique\n", "completion": "finder~shodan search routers country:'MZ'"}
+{"prompt": "find apache servers in New Caledonia Fr.\n", "completion": "finder~shodan search apache country:'NC'"}
+{"prompt": "find memcached servers in New Caledonia Fr.\n", "completion": "finder~shodan search memcached country:'NC'"}
+{"prompt": "find portainer instances in New Caledonia Fr.\n", "completion": "finder~shodan search portainer country:'NC'"}
+{"prompt": "find docker hosts in New Caledonia Fr.\n", "completion": "finder~shodan search docker country:'NC'"}
+{"prompt": "find cameras in New Caledonia Fr.\n", "completion": "finder~shodan search cameras country:'NC'"}
+{"prompt": "find routers in New Caledonia Fr.\n", "completion": "finder~shodan search routers country:'NC'"}
+{"prompt": "find apache servers in Norfolk Island\n", "completion": "finder~shodan search apache country:'NF'"}
+{"prompt": "find memcached servers in Norfolk Island\n", "completion": "finder~shodan search memcached country:'NF'"}
+{"prompt": "find portainer instances in Norfolk Island\n", "completion": "finder~shodan search portainer country:'NF'"}
+{"prompt": "find docker hosts in Norfolk Island\n", "completion": "finder~shodan search docker country:'NF'"}
+{"prompt": "find cameras in Norfolk Island\n", "completion": "finder~shodan search cameras country:'NF'"}
+{"prompt": "find routers in Norfolk Island\n", "completion": "finder~shodan search routers country:'NF'"}
+{"prompt": "find apache servers in Nicaragua\n", "completion": "finder~shodan search apache country:'NI'"}
+{"prompt": "find memcached servers in Nicaragua\n", "completion": "finder~shodan search memcached country:'NI'"}
+{"prompt": "find portainer instances in Nicaragua\n", "completion": "finder~shodan search portainer country:'NI'"}
+{"prompt": "find docker hosts in Nicaragua\n", "completion": "finder~shodan search docker country:'NI'"}
+{"prompt": "find cameras in Nicaragua\n", "completion": "finder~shodan search cameras country:'NI'"}
+{"prompt": "find routers in Nicaragua\n", "completion": "finder~shodan search routers country:'NI'"}
+{"prompt": "find apache servers in Norway\n", "completion": "finder~shodan search apache country:'NO'"}
+{"prompt": "find memcached servers in Norway\n", "completion": "finder~shodan search memcached country:'NO'"}
+{"prompt": "find portainer instances in Norway\n", "completion": "finder~shodan search portainer country:'NO'"}
+{"prompt": "find docker hosts in Norway\n", "completion": "finder~shodan search docker country:'NO'"}
+{"prompt": "find cameras in Norway\n", "completion": "finder~shodan search cameras country:'NO'"}
+{"prompt": "find routers in Norway\n", "completion": "finder~shodan search routers country:'NO'"}
+{"prompt": "find apache servers in Nauru\n", "completion": "finder~shodan search apache country:'NR'"}
+{"prompt": "find memcached servers in Nauru\n", "completion": "finder~shodan search memcached country:'NR'"}
+{"prompt": "find portainer instances in Nauru\n", "completion": "finder~shodan search portainer country:'NR'"}
+{"prompt": "find docker hosts in Nauru\n", "completion": "finder~shodan search docker country:'NR'"}
+{"prompt": "find cameras in Nauru\n", "completion": "finder~shodan search cameras country:'NR'"}
+{"prompt": "find routers in Nauru\n", "completion": "finder~shodan search routers country:'NR'"}
+{"prompt": "find apache servers in New Zealand\n", "completion": "finder~shodan search apache country:'NZ'"}
+{"prompt": "find memcached servers in New Zealand\n", "completion": "finder~shodan search memcached country:'NZ'"}
+{"prompt": "find portainer instances in New Zealand\n", "completion": "finder~shodan search portainer country:'NZ'"}
+{"prompt": "find docker hosts in New Zealand\n", "completion": "finder~shodan search docker country:'NZ'"}
+{"prompt": "find cameras in New Zealand\n", "completion": "finder~shodan search cameras country:'NZ'"}
+{"prompt": "find routers in New Zealand\n", "completion": "finder~shodan search routers country:'NZ'"}
+{"prompt": "find apache servers in Panama\n", "completion": "finder~shodan search apache country:'PA'"}
+{"prompt": "find memcached servers in Panama\n", "completion": "finder~shodan search memcached country:'PA'"}
+{"prompt": "find portainer instances in Panama\n", "completion": "finder~shodan search portainer country:'PA'"}
+{"prompt": "find docker hosts in Panama\n", "completion": "finder~shodan search docker country:'PA'"}
+{"prompt": "find cameras in Panama\n", "completion": "finder~shodan search cameras country:'PA'"}
+{"prompt": "find routers in Panama\n", "completion": "finder~shodan search routers country:'PA'"}
+{"prompt": "find apache servers in Polynesia (Fr.)\n", "completion": "finder~shodan search apache country:'PF'"}
+{"prompt": "find memcached servers in Polynesia (Fr.)\n", "completion": "finder~shodan search memcached country:'PF'"}
+{"prompt": "find portainer instances in Polynesia (Fr.)\n", "completion": "finder~shodan search portainer country:'PF'"}
+{"prompt": "find docker hosts in Polynesia (Fr.)\n", "completion": "finder~shodan search docker country:'PF'"}
+{"prompt": "find cameras in Polynesia (Fr.)\n", "completion": "finder~shodan search cameras country:'PF'"}
+{"prompt": "find routers in Polynesia (Fr.)\n", "completion": "finder~shodan search routers country:'PF'"}
+{"prompt": "find apache servers in Philippines\n", "completion": "finder~shodan search apache country:'PH'"}
+{"prompt": "find memcached servers in Philippines\n", "completion": "finder~shodan search memcached country:'PH'"}
+{"prompt": "find portainer instances in Philippines\n", "completion": "finder~shodan search portainer country:'PH'"}
+{"prompt": "find docker hosts in Philippines\n", "completion": "finder~shodan search docker country:'PH'"}
+{"prompt": "find cameras in Philippines\n", "completion": "finder~shodan search cameras country:'PH'"}
+{"prompt": "find routers in Philippines\n", "completion": "finder~shodan search routers country:'PH'"}
+{"prompt": "find apache servers in Poland\n", "completion": "finder~shodan search apache country:'PL'"}
+{"prompt": "find memcached servers in Poland\n", "completion": "finder~shodan search memcached country:'PL'"}
+{"prompt": "find portainer instances in Poland\n", "completion": "finder~shodan search portainer country:'PL'"}
+{"prompt": "find docker hosts in Poland\n", "completion": "finder~shodan search docker country:'PL'"}
+{"prompt": "find cameras in Poland\n", "completion": "finder~shodan search cameras country:'PL'"}
+{"prompt": "find routers in Poland\n", "completion": "finder~shodan search routers country:'PL'"}
+{"prompt": "find apache servers in Pitcairn\n", "completion": "finder~shodan search apache country:'PN'"}
+{"prompt": "find memcached servers in Pitcairn\n", "completion": "finder~shodan search memcached country:'PN'"}
+{"prompt": "find portainer instances in Pitcairn\n", "completion": "finder~shodan search portainer country:'PN'"}
+{"prompt": "find docker hosts in Pitcairn\n", "completion": "finder~shodan search docker country:'PN'"}
+{"prompt": "find cameras in Pitcairn\n", "completion": "finder~shodan search cameras country:'PN'"}
+{"prompt": "find routers in Pitcairn\n", "completion": "finder~shodan search routers country:'PN'"}
+{"prompt": "find apache servers in Portugal\n", "completion": "finder~shodan search apache country:'PT'"}
+{"prompt": "find memcached servers in Portugal\n", "completion": "finder~shodan search memcached country:'PT'"}
+{"prompt": "find portainer instances in Portugal\n", "completion": "finder~shodan search portainer country:'PT'"}
+{"prompt": "find docker hosts in Portugal\n", "completion": "finder~shodan search docker country:'PT'"}
+{"prompt": "find cameras in Portugal\n", "completion": "finder~shodan search cameras country:'PT'"}
+{"prompt": "find routers in Portugal\n", "completion": "finder~shodan search routers country:'PT'"}
+{"prompt": "find apache servers in Paraguay\n", "completion": "finder~shodan search apache country:'PY'"}
+{"prompt": "find memcached servers in Paraguay\n", "completion": "finder~shodan search memcached country:'PY'"}
+{"prompt": "find portainer instances in Paraguay\n", "completion": "finder~shodan search portainer country:'PY'"}
+{"prompt": "find docker hosts in Paraguay\n", "completion": "finder~shodan search docker country:'PY'"}
+{"prompt": "find cameras in Paraguay\n", "completion": "finder~shodan search cameras country:'PY'"}
+{"prompt": "find routers in Paraguay\n", "completion": "finder~shodan search routers country:'PY'"}
+{"prompt": "find apache servers in Reunion (Fr.)\n", "completion": "finder~shodan search apache country:'RE'"}
+{"prompt": "find memcached servers in Reunion (Fr.)\n", "completion": "finder~shodan search memcached country:'RE'"}
+{"prompt": "find portainer instances in Reunion (Fr.)\n", "completion": "finder~shodan search portainer country:'RE'"}
+{"prompt": "find docker hosts in Reunion (Fr.)\n", "completion": "finder~shodan search docker country:'RE'"}
+{"prompt": "find cameras in Reunion (Fr.)\n", "completion": "finder~shodan search cameras country:'RE'"}
+{"prompt": "find routers in Reunion (Fr.)\n", "completion": "finder~shodan search routers country:'RE'"}
+{"prompt": "find apache servers in Russian Federation\n", "completion": "finder~shodan search apache country:'RU'"}
+{"prompt": "find memcached servers in Russian Federation\n", "completion": "finder~shodan search memcached country:'RU'"}
+{"prompt": "find portainer instances in Russian Federation\n", "completion": "finder~shodan search portainer country:'RU'"}
+{"prompt": "find docker hosts in Russian Federation\n", "completion": "finder~shodan search docker country:'RU'"}
+{"prompt": "find cameras in Russian Federation\n", "completion": "finder~shodan search cameras country:'RU'"}
+{"prompt": "find routers in Russian Federation\n", "completion": "finder~shodan search routers country:'RU'"}
+{"prompt": "find apache servers in Saudi Arabia\n", "completion": "finder~shodan search apache country:'SA'"}
+{"prompt": "find memcached servers in Saudi Arabia\n", "completion": "finder~shodan search memcached country:'SA'"}
+{"prompt": "find portainer instances in Saudi Arabia\n", "completion": "finder~shodan search portainer country:'SA'"}
+{"prompt": "find docker hosts in Saudi Arabia\n", "completion": "finder~shodan search docker country:'SA'"}
+{"prompt": "find cameras in Saudi Arabia\n", "completion": "finder~shodan search cameras country:'SA'"}
+{"prompt": "find routers in Saudi Arabia\n", "completion": "finder~shodan search routers country:'SA'"}
+{"prompt": "find apache servers in Seychelles\n", "completion": "finder~shodan search apache country:'SC'"}
+{"prompt": "find memcached servers in Seychelles\n", "completion": "finder~shodan search memcached country:'SC'"}
+{"prompt": "find portainer instances in Seychelles\n", "completion": "finder~shodan search portainer country:'SC'"}
+{"prompt": "find docker hosts in Seychelles\n", "completion": "finder~shodan search docker country:'SC'"}
+{"prompt": "find cameras in Seychelles\n", "completion": "finder~shodan search cameras country:'SC'"}
+{"prompt": "find routers in Seychelles\n", "completion": "finder~shodan search routers country:'SC'"}
+{"prompt": "find apache servers in Sweden\n", "completion": "finder~shodan search apache country:'SE'"}
+{"prompt": "find memcached servers in Sweden\n", "completion": "finder~shodan search memcached country:'SE'"}
+{"prompt": "find portainer instances in Sweden\n", "completion": "finder~shodan search portainer country:'SE'"}
+{"prompt": "find docker hosts in Sweden\n", "completion": "finder~shodan search docker country:'SE'"}
+{"prompt": "find cameras in Sweden\n", "completion": "finder~shodan search cameras country:'SE'"}
+{"prompt": "find routers in Sweden\n", "completion": "finder~shodan search routers country:'SE'"}
+{"prompt": "find apache servers in St. Helena\n", "completion": "finder~shodan search apache country:'SH'"}
+{"prompt": "find memcached servers in St. Helena\n", "completion": "finder~shodan search memcached country:'SH'"}
+{"prompt": "find portainer instances in St. Helena\n", "completion": "finder~shodan search portainer country:'SH'"}
+{"prompt": "find docker hosts in St. Helena\n", "completion": "finder~shodan search docker country:'SH'"}
+{"prompt": "find cameras in St. Helena\n", "completion": "finder~shodan search cameras country:'SH'"}
+{"prompt": "find routers in St. Helena\n", "completion": "finder~shodan search routers country:'SH'"}
+{"prompt": "find apache servers in Svalbard& Jan Mayen Islands\n", "completion": "finder~shodan search apache country:'SJ'"}
+{"prompt": "find memcached servers in Svalbard& Jan Mayen Islands\n", "completion": "finder~shodan search memcached country:'SJ'"}
+{"prompt": "find portainer instances in Svalbard& Jan Mayen Islands\n", "completion": "finder~shodan search portainer country:'SJ'"}
+{"prompt": "find docker hosts in Svalbard& Jan Mayen Islands\n", "completion": "finder~shodan search docker country:'SJ'"}
+{"prompt": "find cameras in Svalbard& Jan Mayen Islands\n", "completion": "finder~shodan search cameras country:'SJ'"}
+{"prompt": "find routers in Svalbard& Jan Mayen Islands\n", "completion": "finder~shodan search routers country:'SJ'"}
+{"prompt": "find apache servers in Sierra Leone\n", "completion": "finder~shodan search apache country:'SL'"}
+{"prompt": "find memcached servers in Sierra Leone\n", "completion": "finder~shodan search memcached country:'SL'"}
+{"prompt": "find portainer instances in Sierra Leone\n", "completion": "finder~shodan search portainer country:'SL'"}
+{"prompt": "find docker hosts in Sierra Leone\n", "completion": "finder~shodan search docker country:'SL'"}
+{"prompt": "find cameras in Sierra Leone\n", "completion": "finder~shodan search cameras country:'SL'"}
+{"prompt": "find routers in Sierra Leone\n", "completion": "finder~shodan search routers country:'SL'"}
+{"prompt": "find apache servers in Senegal\n", "completion": "finder~shodan search apache country:'SN'"}
+{"prompt": "find memcached servers in Senegal\n", "completion": "finder~shodan search memcached country:'SN'"}
+{"prompt": "find portainer instances in Senegal\n", "completion": "finder~shodan search portainer country:'SN'"}
+{"prompt": "find docker hosts in Senegal\n", "completion": "finder~shodan search docker country:'SN'"}
+{"prompt": "find cameras in Senegal\n", "completion": "finder~shodan search cameras country:'SN'"}
+{"prompt": "find routers in Senegal\n", "completion": "finder~shodan search routers country:'SN'"}
+{"prompt": "find apache servers in Suriname\n", "completion": "finder~shodan search apache country:'SR'"}
+{"prompt": "find memcached servers in Suriname\n", "completion": "finder~shodan search memcached country:'SR'"}
+{"prompt": "find portainer instances in Suriname\n", "completion": "finder~shodan search portainer country:'SR'"}
+{"prompt": "find docker hosts in Suriname\n", "completion": "finder~shodan search docker country:'SR'"}
+{"prompt": "find cameras in Suriname\n", "completion": "finder~shodan search cameras country:'SR'"}
+{"prompt": "find routers in Suriname\n", "completion": "finder~shodan search routers country:'SR'"}
+{"prompt": "find apache servers in Soviet Union (obsolete)\n", "completion": "finder~shodan search apache country:'SU'"}
+{"prompt": "find memcached servers in Soviet Union (obsolete)\n", "completion": "finder~shodan search memcached country:'SU'"}
+{"prompt": "find portainer instances in Soviet Union (obsolete)\n", "completion": "finder~shodan search portainer country:'SU'"}
+{"prompt": "find docker hosts in Soviet Union (obsolete)\n", "completion": "finder~shodan search docker country:'SU'"}
+{"prompt": "find cameras in Soviet Union (obsolete)\n", "completion": "finder~shodan search cameras country:'SU'"}
+{"prompt": "find routers in Soviet Union (obsolete)\n", "completion": "finder~shodan search routers country:'SU'"}
+{"prompt": "find apache servers in Syria\n", "completion": "finder~shodan search apache country:'SY'"}
+{"prompt": "find memcached servers in Syria\n", "completion": "finder~shodan search memcached country:'SY'"}
+{"prompt": "find portainer instances in Syria\n", "completion": "finder~shodan search portainer country:'SY'"}
+{"prompt": "find docker hosts in Syria\n", "completion": "finder~shodan search docker country:'SY'"}
+{"prompt": "find cameras in Syria\n", "completion": "finder~shodan search cameras country:'SY'"}
+{"prompt": "find routers in Syria\n", "completion": "finder~shodan search routers country:'SY'"}
+{"prompt": "find apache servers in Turks& Caicos Islands\n", "completion": "finder~shodan search apache country:'TC'"}
+{"prompt": "find memcached servers in Turks& Caicos Islands\n", "completion": "finder~shodan search memcached country:'TC'"}
+{"prompt": "find portainer instances in Turks& Caicos Islands\n", "completion": "finder~shodan search portainer country:'TC'"}
+{"prompt": "find docker hosts in Turks& Caicos Islands\n", "completion": "finder~shodan search docker country:'TC'"}
+{"prompt": "find cameras in Turks& Caicos Islands\n", "completion": "finder~shodan search cameras country:'TC'"}
+{"prompt": "find routers in Turks& Caicos Islands\n", "completion": "finder~shodan search routers country:'TC'"}
+{"prompt": "find apache servers in French Southern Territory\n", "completion": "finder~shodan search apache country:'TF'"}
+{"prompt": "find memcached servers in French Southern Territory\n", "completion": "finder~shodan search memcached country:'TF'"}
+{"prompt": "find portainer instances in French Southern Territory\n", "completion": "finder~shodan search portainer country:'TF'"}
+{"prompt": "find docker hosts in French Southern Territory\n", "completion": "finder~shodan search docker country:'TF'"}
+{"prompt": "find cameras in French Southern Territory\n", "completion": "finder~shodan search cameras country:'TF'"}
+{"prompt": "find routers in French Southern Territory\n", "completion": "finder~shodan search routers country:'TF'"}
+{"prompt": "find apache servers in Thailand\n", "completion": "finder~shodan search apache country:'TH'"}
+{"prompt": "find memcached servers in Thailand\n", "completion": "finder~shodan search memcached country:'TH'"}
+{"prompt": "find portainer instances in Thailand\n", "completion": "finder~shodan search portainer country:'TH'"}
+{"prompt": "find docker hosts in Thailand\n", "completion": "finder~shodan search docker country:'TH'"}
+{"prompt": "find cameras in Thailand\n", "completion": "finder~shodan search cameras country:'TH'"}
+{"prompt": "find routers in Thailand\n", "completion": "finder~shodan search routers country:'TH'"}
+{"prompt": "find apache servers in Tokelau\n", "completion": "finder~shodan search apache country:'TK'"}
+{"prompt": "find memcached servers in Tokelau\n", "completion": "finder~shodan search memcached country:'TK'"}
+{"prompt": "find portainer instances in Tokelau\n", "completion": "finder~shodan search portainer country:'TK'"}
+{"prompt": "find docker hosts in Tokelau\n", "completion": "finder~shodan search docker country:'TK'"}
+{"prompt": "find cameras in Tokelau\n", "completion": "finder~shodan search cameras country:'TK'"}
+{"prompt": "find routers in Tokelau\n", "completion": "finder~shodan search routers country:'TK'"}
+{"prompt": "find apache servers in Tunisia\n", "completion": "finder~shodan search apache country:'TN'"}
+{"prompt": "find memcached servers in Tunisia\n", "completion": "finder~shodan search memcached country:'TN'"}
+{"prompt": "find portainer instances in Tunisia\n", "completion": "finder~shodan search portainer country:'TN'"}
+{"prompt": "find docker hosts in Tunisia\n", "completion": "finder~shodan search docker country:'TN'"}
+{"prompt": "find cameras in Tunisia\n", "completion": "finder~shodan search cameras country:'TN'"}
+{"prompt": "find routers in Tunisia\n", "completion": "finder~shodan search routers country:'TN'"}
+{"prompt": "find apache servers in East Timor\n", "completion": "finder~shodan search apache country:'TP'"}
+{"prompt": "find memcached servers in East Timor\n", "completion": "finder~shodan search memcached country:'TP'"}
+{"prompt": "find portainer instances in East Timor\n", "completion": "finder~shodan search portainer country:'TP'"}
+{"prompt": "find docker hosts in East Timor\n", "completion": "finder~shodan search docker country:'TP'"}
+{"prompt": "find cameras in East Timor\n", "completion": "finder~shodan search cameras country:'TP'"}
+{"prompt": "find routers in East Timor\n", "completion": "finder~shodan search routers country:'TP'"}
+{"prompt": "find apache servers in Trinidad Tobago\n", "completion": "finder~shodan search apache country:'TT'"}
+{"prompt": "find memcached servers in Trinidad Tobago\n", "completion": "finder~shodan search memcached country:'TT'"}
+{"prompt": "find portainer instances in Trinidad Tobago\n", "completion": "finder~shodan search portainer country:'TT'"}
+{"prompt": "find docker hosts in Trinidad Tobago\n", "completion": "finder~shodan search docker country:'TT'"}
+{"prompt": "find cameras in Trinidad Tobago\n", "completion": "finder~shodan search cameras country:'TT'"}
+{"prompt": "find routers in Trinidad Tobago\n", "completion": "finder~shodan search routers country:'TT'"}
+{"prompt": "find apache servers in Taiwan\n", "completion": "finder~shodan search apache country:'TW'"}
+{"prompt": "find memcached servers in Taiwan\n", "completion": "finder~shodan search memcached country:'TW'"}
+{"prompt": "find portainer instances in Taiwan\n", "completion": "finder~shodan search portainer country:'TW'"}
+{"prompt": "find docker hosts in Taiwan\n", "completion": "finder~shodan search docker country:'TW'"}
+{"prompt": "find cameras in Taiwan\n", "completion": "finder~shodan search cameras country:'TW'"}
+{"prompt": "find routers in Taiwan\n", "completion": "finder~shodan search routers country:'TW'"}
+{"prompt": "find apache servers in Ukraine\n", "completion": "finder~shodan search apache country:'UA'"}
+{"prompt": "find memcached servers in Ukraine\n", "completion": "finder~shodan search memcached country:'UA'"}
+{"prompt": "find portainer instances in Ukraine\n", "completion": "finder~shodan search portainer country:'UA'"}
+{"prompt": "find docker hosts in Ukraine\n", "completion": "finder~shodan search docker country:'UA'"}
+{"prompt": "find cameras in Ukraine\n", "completion": "finder~shodan search cameras country:'UA'"}
+{"prompt": "find routers in Ukraine\n", "completion": "finder~shodan search routers country:'UA'"}
+{"prompt": "find apache servers in United Kingdom\n", "completion": "finder~shodan search apache country:'UK'"}
+{"prompt": "find memcached servers in United Kingdom\n", "completion": "finder~shodan search memcached country:'UK'"}
+{"prompt": "find portainer instances in United Kingdom\n", "completion": "finder~shodan search portainer country:'UK'"}
+{"prompt": "find docker hosts in United Kingdom\n", "completion": "finder~shodan search docker country:'UK'"}
+{"prompt": "find cameras in United Kingdom\n", "completion": "finder~shodan search cameras country:'UK'"}
+{"prompt": "find routers in United Kingdom\n", "completion": "finder~shodan search routers country:'UK'"}
+{"prompt": "find apache servers in United States\n", "completion": "finder~shodan search apache country:'US'"}
+{"prompt": "find memcached servers in United States\n", "completion": "finder~shodan search memcached country:'US'"}
+{"prompt": "find portainer instances in United States\n", "completion": "finder~shodan search portainer country:'US'"}
+{"prompt": "find docker hosts in United States\n", "completion": "finder~shodan search docker country:'US'"}
+{"prompt": "find cameras in United States\n", "completion": "finder~shodan search cameras country:'US'"}
+{"prompt": "find routers in United States\n", "completion": "finder~shodan search routers country:'US'"}
+{"prompt": "find apache servers in Uzbekistan\n", "completion": "finder~shodan search apache country:'UZ'"}
+{"prompt": "find memcached servers in Uzbekistan\n", "completion": "finder~shodan search memcached country:'UZ'"}
+{"prompt": "find portainer instances in Uzbekistan\n", "completion": "finder~shodan search portainer country:'UZ'"}
+{"prompt": "find docker hosts in Uzbekistan\n", "completion": "finder~shodan search docker country:'UZ'"}
+{"prompt": "find cameras in Uzbekistan\n", "completion": "finder~shodan search cameras country:'UZ'"}
+{"prompt": "find routers in Uzbekistan\n", "completion": "finder~shodan search routers country:'UZ'"}
+{"prompt": "find apache servers in St. Vincent& Grenadines\n", "completion": "finder~shodan search apache country:'VC'"}
+{"prompt": "find memcached servers in St. Vincent& Grenadines\n", "completion": "finder~shodan search memcached country:'VC'"}
+{"prompt": "find portainer instances in St. Vincent& Grenadines\n", "completion": "finder~shodan search portainer country:'VC'"}
+{"prompt": "find docker hosts in St. Vincent& Grenadines\n", "completion": "finder~shodan search docker country:'VC'"}
+{"prompt": "find cameras in St. Vincent& Grenadines\n", "completion": "finder~shodan search cameras country:'VC'"}
+{"prompt": "find routers in St. Vincent& Grenadines\n", "completion": "finder~shodan search routers country:'VC'"}
+{"prompt": "find apache servers in VirginIslands (GB)\n", "completion": "finder~shodan search apache country:'VG'"}
+{"prompt": "find memcached servers in VirginIslands (GB)\n", "completion": "finder~shodan search memcached country:'VG'"}
+{"prompt": "find portainer instances in VirginIslands (GB)\n", "completion": "finder~shodan search portainer country:'VG'"}
+{"prompt": "find docker hosts in VirginIslands (GB)\n", "completion": "finder~shodan search docker country:'VG'"}
+{"prompt": "find cameras in VirginIslands (GB)\n", "completion": "finder~shodan search cameras country:'VG'"}
+{"prompt": "find routers in VirginIslands (GB)\n", "completion": "finder~shodan search routers country:'VG'"}
+{"prompt": "find apache servers in Vietnam\n", "completion": "finder~shodan search apache country:'VN'"}
+{"prompt": "find memcached servers in Vietnam\n", "completion": "finder~shodan search memcached country:'VN'"}
+{"prompt": "find portainer instances in Vietnam\n", "completion": "finder~shodan search portainer country:'VN'"}
+{"prompt": "find docker hosts in Vietnam\n", "completion": "finder~shodan search docker country:'VN'"}
+{"prompt": "find cameras in Vietnam\n", "completion": "finder~shodan search cameras country:'VN'"}
+{"prompt": "find routers in Vietnam\n", "completion": "finder~shodan search routers country:'VN'"}
+{"prompt": "find apache servers in Wallis & Futuna Islands\n", "completion": "finder~shodan search apache country:'WF'"}
+{"prompt": "find memcached servers in Wallis & Futuna Islands\n", "completion": "finder~shodan search memcached country:'WF'"}
+{"prompt": "find portainer instances in Wallis & Futuna Islands\n", "completion": "finder~shodan search portainer country:'WF'"}
+{"prompt": "find docker hosts in Wallis & Futuna Islands\n", "completion": "finder~shodan search docker country:'WF'"}
+{"prompt": "find cameras in Wallis & Futuna Islands\n", "completion": "finder~shodan search cameras country:'WF'"}
+{"prompt": "find routers in Wallis & Futuna Islands\n", "completion": "finder~shodan search routers country:'WF'"}
+{"prompt": "find apache servers in Yemen\n", "completion": "finder~shodan search apache country:'YE'"}
+{"prompt": "find memcached servers in Yemen\n", "completion": "finder~shodan search memcached country:'YE'"}
+{"prompt": "find portainer instances in Yemen\n", "completion": "finder~shodan search portainer country:'YE'"}
+{"prompt": "find docker hosts in Yemen\n", "completion": "finder~shodan search docker country:'YE'"}
+{"prompt": "find cameras in Yemen\n", "completion": "finder~shodan search cameras country:'YE'"}
+{"prompt": "find routers in Yemen\n", "completion": "finder~shodan search routers country:'YE'"}
+{"prompt": "find apache servers in Yugoslavia (obsolete)\n", "completion": "finder~shodan search apache country:'YU'"}
+{"prompt": "find memcached servers in Yugoslavia (obsolete)\n", "completion": "finder~shodan search memcached country:'YU'"}
+{"prompt": "find portainer instances in Yugoslavia (obsolete)\n", "completion": "finder~shodan search portainer country:'YU'"}
+{"prompt": "find docker hosts in Yugoslavia (obsolete)\n", "completion": "finder~shodan search docker country:'YU'"}
+{"prompt": "find cameras in Yugoslavia (obsolete)\n", "completion": "finder~shodan search cameras country:'YU'"}
+{"prompt": "find routers in Yugoslavia (obsolete)\n", "completion": "finder~shodan search routers country:'YU'"}
+{"prompt": "find apache servers in Zambia\n", "completion": "finder~shodan search apache country:'ZM'"}
+{"prompt": "find memcached servers in Zambia\n", "completion": "finder~shodan search memcached country:'ZM'"}
+{"prompt": "find portainer instances in Zambia\n", "completion": "finder~shodan search portainer country:'ZM'"}
+{"prompt": "find docker hosts in Zambia\n", "completion": "finder~shodan search docker country:'ZM'"}
+{"prompt": "find cameras in Zambia\n", "completion": "finder~shodan search cameras country:'ZM'"}
+{"prompt": "find routers in Zambia\n", "completion": "finder~shodan search routers country:'ZM'"}
+{"prompt": "find apache servers in Zimbabwe\n", "completion": "finder~shodan search apache country:'ZW'"}
+{"prompt": "find memcached servers in Zimbabwe\n", "completion": "finder~shodan search memcached country:'ZW'"}
+{"prompt": "find portainer instances in Zimbabwe\n", "completion": "finder~shodan search portainer country:'ZW'"}
+{"prompt": "find docker hosts in Zimbabwe\n", "completion": "finder~shodan search docker country:'ZW'"}
+{"prompt": "find cameras in Zimbabwe\n", "completion": "finder~shodan search cameras country:'ZW'"}
+{"prompt": "find routers in Zimbabwe\n", "completion": "finder~shodan search routers country:'ZW'"}

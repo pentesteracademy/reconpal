@@ -1,0 +1,45 @@
+version: "3"
+   
+services:
+  controller:
+    image: pentesteracademy/reconpal:controller
+    environment:
+      - OPENAI_API_KEY=XXXXXXXXXXXXXXXXXXX
+      - SHODAN_API_KEY=XXXXXXXXXXXXXXXXXXX
+      - TELEGRAM_BOT_TOKEN=XXXXXXXXXXXXXXXXXXX
+    networks:
+       reconpal:
+         ipv4_address: 10.131.131.5
+    volumes:
+      - /home/ubuntu/reconpal/datastore/controller/:/datastore/
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  scanner:
+    image: pentesteracademy/reconpal:scanner
+    depends_on: 
+      - controller
+    networks:
+      reconpal:
+        ipv4_address: 10.131.131.4
+    volumes:
+      - /home/ubuntu/reconpal/datastore/wordlists/:/usr/share/wordlists/
+
+  attacker:
+    image: pentesteracademy/reconpal:attacker
+    depends_on: 
+      - scanner
+    networks:
+      reconpal:
+        ipv4_address: 10.131.131.6
+    volumes:
+      - /home/ubuntu/datastore/wordlists/:/usr/share/wordlists/
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  reconpal:
+    driver: bridge
+    ipam:
+      config:
+       - subnet: 10.131.131.0/24
+         gateway: 10.131.131.1
+
